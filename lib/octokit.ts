@@ -1,10 +1,14 @@
 import { Octokit } from "octokit";
+import { Endpoints } from "@octokit/types";
 
 export const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
+export type SearchRepositoriesResponse =
+  Endpoints["GET /search/repositories"]["response"]["data"];
 
+export type RepoItem = SearchRepositoriesResponse["items"][number];
 
 export async function searchCode() {
   try {
