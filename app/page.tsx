@@ -1,9 +1,6 @@
-import Link from "next/link";
 import { RepoItem, searchCode } from "../lib/octokit";
-import { ModeToggle } from "@/components/mode-toggle";
 import {
   Card,
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -11,10 +8,6 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Header } from "@/components/home/header";
 import { RepoCard } from "@/components/home/repo-card";
-
-function formatNumber(n: number) {
-  return Intl.NumberFormat("en", { notation: "compact" }).format(n);
-}
 
 export default async function Home() {
   const result = await searchCode();

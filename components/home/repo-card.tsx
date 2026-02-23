@@ -13,9 +13,11 @@ import {
 import { RepoItem } from "@/lib/octokit";
 
 export const RepoCard = ({ items }: { items: RepoItem[] }) => {
+
   function formatNumber(n: number) {
     return Intl.NumberFormat("en", { notation: "compact" }).format(n);
   }
+  
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((repo) => (
