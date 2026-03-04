@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./mode-toggle";
+import { GithubIcon } from "lucide-react";
 
 export function Navigation() {
   const pathname = usePathname();
@@ -49,8 +50,13 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <div className="top-0 right-0 w-16 h-16 rounded-full "></div>
             <ModeToggle />
+            <Link
+              href="https://github.com/Suyog241005/json-schema-ecosystem"
+              target="_blank"
+            >
+              <GithubIcon className="w-7 h-7 cursor-pointer" />
+            </Link>
           </div>
         </div>
       </div>
