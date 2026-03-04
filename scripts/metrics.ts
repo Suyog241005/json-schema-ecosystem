@@ -67,5 +67,4 @@ export async function runMetrics() {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   runMetrics();
-  setInterval(runMetrics, 2 * 60 * 60 * 1000); // 2 hours
 }
