@@ -35,10 +35,10 @@ export function Navigation() {
                 <div className="flex items-center gap-2">Metrics</div>
               </Link>
               <Link
-                href="/metrics"
+                href="/repo"
                 className={cn(
                   "text-sm font-medium transition-all duration-200 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5",
-                  pathname === "/metrics"
+                  pathname === "/repo"
                     ? "text-primary bg-primary/10 shadow-sm"
                     : "text-muted-foreground",
                 )}

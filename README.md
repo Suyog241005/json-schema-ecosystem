@@ -18,15 +18,7 @@ This project implements a Proof of Concept (PoC) for JSON Schema ecosystem obser
 
 ## 🚀 Features
 
-### Metrics Dashboard (`/metrics`)
-
-- **Real-time data fetching** from npm and GitHub APIs
-- **Interactive bar charts** with Chart.js
-- **Professional card layouts** with linear designs
-- **Animated UI elements** and smooth transitions
-- **Error handling** and loading states
-
-### Repository Explorer (`/`)
+### Metrics Dashboard ([`/`](http://localhost:3000/))
 
 - **Top repositories** sorted by stars
 - **Rich repository cards** displaying:
@@ -37,6 +29,14 @@ This project implements a Proof of Concept (PoC) for JSON Schema ecosystem obser
   - Last updated timestamp
   - Active status indicators
 - **GitHub integration** with direct repository links
+
+### Repository Explorer ([`/repo`](http://localhost:3000/repo))
+
+- **Real-time data fetching** from npm and GitHub APIs
+- **Interactive bar charts** with Chart.js
+- **Professional card layouts** with linear designs
+- **Animated UI elements** and smooth transitions
+- **Error handling** and loading states
 
 ### Navigation & UX
 

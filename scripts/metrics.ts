@@ -9,57 +9,50 @@ interface NpmDownloadsResponse {
   package: string;
 }
 
-interface GitHubSearchResponse {
-  total_count: number;
-  items: any[];
-}
-
 export interface MetricsOutput {
   timestamp: string;
-  npm: {
+  ajv: {
     package: string;
     weeklyDownloads: number;
   };
-  github: {
-    topic: string;
-    repoCount: number;
+  hyperjump: {
+    package: string;
+    weeklyDownloads: number;
+  };
+  jsonschema: {
+    package: string;
+    weeklyDownloads: number;
   };
 }
 
 async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
-  const url = `https://api.npmjs.org/downloads/point/last-week/avj`;
+  const url = `https://api.npmjs.org/downloads/point/last-week/${pkg}`;
   const response = await axios.get<NpmDownloadsResponse>(url);
   console.log(response.data);
   return response.data.downloads;
 }
 
-async function getGitHubRepoCount(topic: string): Promise<number> {
-  const url = `https://api.github.com/search/repositories?q=topic:${topic}&per_page=1`;
-  const { data } = await axios.get<GitHubSearchResponse>(url, {
-    headers: {
-      Accept: "application/vnd.github+json",
-    },
-  });
-  console.log("GitHub repo count:", data.total_count);
-  return data.total_count;
-}
-
 export async function runMetrics() {
   try {
-    const [npmDownloads, repoCount] = await Promise.all([
+    const [npmDownloads, hyperjumpDownloads, jsonschemaDownloads] = await Promise.all([
       getNpmWeeklyDownloads("ajv"),
-      getGitHubRepoCount("json-schema"),
+      getNpmWeeklyDownloads("@hyperjump/json-schema"),
+      getNpmWeeklyDownloads("jsonschema"),
     ]);
 
     const output: MetricsOutput = {
       timestamp: new Date().toISOString(),
-      npm: {
+      ajv: {
         package: "ajv",
         weeklyDownloads: npmDownloads,
       },
-      github: {
-        topic: "json-schema",
-        repoCount,
+      hyperjump: {
+        package: "@hyperjump/json-schema",
+        weeklyDownloads: hyperjumpDownloads,
+      },
+      jsonschema: {
+        package: "jsonschema",
+        weeklyDownloads: jsonschemaDownloads,
       },
     };
 

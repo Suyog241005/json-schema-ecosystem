@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Chart from "chart.js/auto";
+import ChartDatalabels from "chartjs-plugin-datalabels";
 import {
   Card,
   CardContent,
@@ -10,6 +11,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import type { MetricsOutput } from "@/scripts/metrics";
+import Link from "next/link";
+
+const npmUrl = "https://npmjs.com/package/";
 
 export default function MetricsPage() {
   const [data, setData] = useState<MetricsOutput | null>(null);
@@ -37,30 +41,51 @@ export default function MetricsPage() {
     const ctx = document.getElementById("metricsChart") as HTMLCanvasElement;
     if (!ctx) return;
 
-    
-
     var myChart = new Chart(ctx, {
       type: "bar",
       data: {
         labels: [
-          `npm weekly downloads (${data.npm.package})`,
-          `GitHub repos (${data.github.topic})`,
+          `${data.ajv.package}`,
+          `${data.jsonschema.package}`,
+          `${data.hyperjump.package}`,
         ].filter(Boolean),
         datasets: [
           {
-            data: [data.npm.weeklyDownloads, data.github.repoCount].filter(
-              (v) => typeof v === "number",
-            ),
-            backgroundColor: ["hsl(221, 83%, 53%)", "hsl(142, 71%, 45%)"],
+            data: [
+              data.ajv.weeklyDownloads,
+              data.jsonschema.weeklyDownloads,
+              data.hyperjump.weeklyDownloads,
+            ].filter((v) => typeof v === "number"),
+            backgroundColor: [
+              "hsl(221, 83%, 53%)",
+              "hsl(142, 71%, 45%)",
+              "hsl(340, 82%, 62%)",
+            ],
             borderRadius: 8,
             borderSkipped: false,
-            barPercentage: 0.5,
+            barPercentage: 0.4,
+            datalabels: {
+              color: "white",
+              font: {
+                size: 14,
+                weight: "bold",
+              },
+              anchor: "end",
+              align: "top",
+              formatter: (value) => value.toLocaleString(),
+              textStrokeColor: "rgba(0, 0, 0, 0.3)",
+              textStrokeWidth: 2,
+              padding: 4,
+              offset: -5,
+            },
           },
         ],
       },
+      plugins: [ChartDatalabels],
       options: {
         responsive: true,
         maintainAspectRatio: false,
+
         plugins: {
           legend: {
             display: false,
@@ -76,9 +101,6 @@ export default function MetricsPage() {
         },
         scales: {
           x: {
-            grid: {
-              display: false,
-            },
             ticks: {
               color: "hsl(0, 0%, 45%)",
               font: {
@@ -93,7 +115,7 @@ export default function MetricsPage() {
             ticks: {
               color: "hsl(0, 0%, 45%)",
               font: {
-                size: 12,
+                size: 10,
               },
             },
           },
@@ -101,8 +123,8 @@ export default function MetricsPage() {
       },
     });
     return () => {
-      myChart.destroy()
-    }
+      myChart.destroy();
+    };
   }, [data]);
 
   if (loading)
@@ -123,40 +145,71 @@ export default function MetricsPage() {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Metrics Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="relative overflow-hidden border-0 shadow-lg bg-linear-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full -mr-16 -mt-16" />
-              <CardHeader className="relative pb-2">
-                <CardTitle className="text-lg font-medium text-blue-900 dark:text-blue-100">
-                  npm weekly downloads
-                </CardTitle>
-                <CardDescription className="text-blue-700 dark:text-blue-300">
-                  {data?.npm.package}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="relative">
-                <div className="text-3xl font-bold text-blue-900 dark:text-blue-100">
-                  {data?.npm.weeklyDownloads.toLocaleString()}
-                </div>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link
+              href={`${npmUrl}${data?.ajv.package}`}
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <Card className="relative overflow-hidden border-0 shadow-lg bg-linear-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
+                <CardHeader className="relative pb-2">
+                  <CardTitle className="text-lg font-medium text-blue-900 dark:text-blue-100">
+                    npm weekly downloads
+                  </CardTitle>
+                  <CardDescription className="text-blue-700 dark:text-blue-300">
+                    {data?.ajv.package}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="relative">
+                  <div className="text-3xl font-bold text-blue-900 dark:text-blue-100">
+                    {data?.ajv.weeklyDownloads.toLocaleString()}
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card className="relative overflow-hidden border-0 shadow-lg bg-linear-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full -mr-16 -mt-16" />
-              <CardHeader className="relative pb-2">
-                <CardTitle className="text-lg font-medium text-green-900 dark:text-green-100">
-                  GitHub repositories
-                </CardTitle>
-                <CardDescription className="text-green-700 dark:text-green-300">
-                  {data?.github.topic} topic
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="relative">
-                <div className="text-3xl font-bold text-green-900 dark:text-green-100">
-                  {data?.github.repoCount.toLocaleString()}
-                </div>
-              </CardContent>
-            </Card>
+            <Link
+              href={`${npmUrl}${data?.jsonschema.package}`}
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <Card className="relative overflow-hidden border-0 shadow-lg bg-linear-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
+                <CardHeader className="relative pb-2">
+                  <CardTitle className="text-lg font-medium text-blue-900 dark:text-blue-100">
+                    npm weekly downloads
+                  </CardTitle>
+                  <CardDescription className="text-blue-700 dark:text-blue-300">
+                    {data?.jsonschema.package}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="relative">
+                  <div className="text-3xl font-bold text-blue-900 dark:text-blue-100">
+                    {data?.jsonschema.weeklyDownloads.toLocaleString()}
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link
+              href={`${npmUrl}${data?.hyperjump.package}`}
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <Card className="relative overflow-hidden border-0 shadow-lg bg-linear-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
+                <CardHeader className="relative pb-2">
+                  <CardTitle className="text-lg font-medium text-blue-900 dark:text-blue-100">
+                    npm weekly downloads
+                  </CardTitle>
+                  <CardDescription className="text-blue-700 dark:text-blue-300">
+                    {data?.hyperjump.package}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="relative">
+                  <div className="text-3xl font-bold text-blue-900 dark:text-blue-100">
+                    {data?.hyperjump.weeklyDownloads.toLocaleString()}
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           {/* Chart Card */}
