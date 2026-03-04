@@ -1,8 +1,8 @@
 {
-  "timestamp": "2026-03-04T07:14:04.240Z",
+  "timestamp": "2026-03-04T10:10:24.943Z",
   "ajv": {
     "package": "ajv",
-    "weeklyDownloads": 243805475
+    "weeklyDownloads": 243663432
   },
   "hyperjump": {
     "package": "@hyperjump/json-schema",
@@ -10,6 +10,6 @@
   },
   "jsonschema": {
     "package": "jsonschema",
-    "weeklyDownloads": 5390083
+    "weeklyDownloads": 5329823
   }
 }

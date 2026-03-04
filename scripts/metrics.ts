@@ -34,11 +34,12 @@ async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
 
 export async function runMetrics() {
   try {
-    const [npmDownloads, hyperjumpDownloads, jsonschemaDownloads] = await Promise.all([
-      getNpmWeeklyDownloads("ajv"),
-      getNpmWeeklyDownloads("@hyperjump/json-schema"),
-      getNpmWeeklyDownloads("jsonschema"),
-    ]);
+    const [npmDownloads, hyperjumpDownloads, jsonschemaDownloads] =
+      await Promise.all([
+        getNpmWeeklyDownloads("ajv"),
+        getNpmWeeklyDownloads("@hyperjump/json-schema"),
+        getNpmWeeklyDownloads("jsonschema"),
+      ]);
 
     const output: MetricsOutput = {
       timestamp: new Date().toISOString(),
@@ -66,4 +67,5 @@ export async function runMetrics() {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   runMetrics();
+  setInterval(runMetrics, 2 * 60 * 60 * 1000); // 2 hours
 }
