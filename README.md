@@ -15,6 +15,22 @@ This project implements a Proof of Concept (PoC) for JSON Schema ecosystem obser
 - **Metrics collection script** that saves data to `metrics-output.json`
 - **Next.js integration** with API routes and client-side rendering
 
+## 📄 Qualification Analysis
+
+See [`analysis.md`](./analysis.md) for:
+
+- What these metrics tell us about the JSON Schema ecosystem
+- How to automate the script weekly
+- One challenge faced and the solution
+
+## 📄 Part 2 — Evaluation
+
+See [`evaluation.md`](./evaluation.md) for:
+
+- Review of the existing PoC / approach
+- Assessment of what works well vs gaps
+- Recommendations and next steps
+
 ## 🚀 Features
 
 ### Metrics Dashboard ([`/`](http://localhost:3000/))
