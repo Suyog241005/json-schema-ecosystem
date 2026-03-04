@@ -23,6 +23,7 @@ export interface MetricsOutput {
     package: string;
     weeklyDownloads: number;
   };
+  githubRepoCount: number;
 }
 
 async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
@@ -32,14 +33,27 @@ async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
   return response.data.downloads;
 }
 
+async function getGithubRepoCount() {
+  const result = await axios.get(
+    "https://api.github.com/search/repositories?q=topic:json-schema",
+  );
+  console.log("githubRepoCount ",result.data.total_count);
+  return result.data.total_count;
+}
+
 export async function runMetrics() {
   try {
-    const [npmDownloads, hyperjumpDownloads, jsonschemaDownloads] =
-      await Promise.all([
-        getNpmWeeklyDownloads("ajv"),
-        getNpmWeeklyDownloads("@hyperjump/json-schema"),
-        getNpmWeeklyDownloads("jsonschema"),
-      ]);
+    const [
+      npmDownloads,
+      hyperjumpDownloads,
+      jsonschemaDownloads,
+      githubRepoCount,
+    ] = await Promise.all([
+      getNpmWeeklyDownloads("ajv"),
+      getNpmWeeklyDownloads("@hyperjump/json-schema"),
+      getNpmWeeklyDownloads("jsonschema"),
+      getGithubRepoCount(),
+    ]);
 
     const output: MetricsOutput = {
       timestamp: new Date().toISOString(),
@@ -55,6 +69,7 @@ export async function runMetrics() {
         package: "jsonschema",
         weeklyDownloads: jsonschemaDownloads,
       },
+      githubRepoCount: githubRepoCount,
     };
 
     writeFileSync("metrics-output.json", JSON.stringify(output, null, 2));

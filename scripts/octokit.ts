@@ -25,3 +25,5 @@ export async function searchCode() {
     return null;
   }
 }
+
+export const result = await searchCode();
