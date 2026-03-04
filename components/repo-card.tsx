@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { RepoItem } from "@/lib/octokit";
+import { RepoItem } from "@/scripts/octokit";
 
 export const RepoCard = ({ items }: { items: RepoItem[] }) => {
   function formatNumber(n: number) {

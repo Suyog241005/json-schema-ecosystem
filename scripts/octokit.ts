@@ -14,7 +14,7 @@ export async function searchCode() {
       q: "topic:json-schema",
       sort: "stars",
       order: "desc",
-      per_page: 300,
+      per_page: 100,
       headers: {
         "X-GitHub-Api-Version": "2022-11-28",
       },

@@ -1,4 +1,4 @@
-import { RepoItem, searchCode } from "@/lib/octokit";
+import { RepoItem, searchCode } from "@/scripts/octokit";
 import {
   Card,
   CardContent,
@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { RepoCard } from "@/components/repo-card";
 
-export default async function Home() {
+export default async function RepoPage() {
   const result = await searchCode();
   const items: RepoItem[] = result?.data?.items ?? [];
 
