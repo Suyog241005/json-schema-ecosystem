@@ -1,15 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { Badge } from "../ui/badge";
-import { Button } from "../ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "../ui/card";
+} from "@/components/ui/card";
 import { RepoItem } from "@/lib/octokit";
 
 export const RepoCard = ({ items }: { items: RepoItem[] }) => {
@@ -20,7 +20,7 @@ export const RepoCard = ({ items }: { items: RepoItem[] }) => {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((repo) => (
-        <Card key={repo.id} className="relative overflow-hidden border-0 shadow-lg bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex flex-col">
+        <Card key={repo.id} className="relative overflow-hidden border-0 shadow-lg bg-linear-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 flex flex-col">
           <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12" />
           
           <CardHeader className="space-y-3 relative">

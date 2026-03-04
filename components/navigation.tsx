@@ -32,7 +32,7 @@ export function Navigation() {
                     : "text-muted-foreground",
                 )}
               >
-                <div className="flex items-center gap-2">Repositories</div>
+                <div className="flex items-center gap-2">Metrics</div>
               </Link>
               <Link
                 href="/metrics"
@@ -43,7 +43,7 @@ export function Navigation() {
                     : "text-muted-foreground",
                 )}
               >
-                <div className="flex items-center gap-2">Metrics</div>
+                <div className="flex items-center gap-2">Repositories</div>
               </Link>
             </div>
           </div>

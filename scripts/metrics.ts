@@ -40,6 +40,7 @@ async function getGitHubRepoCount(topic: string): Promise<number> {
       Accept: "application/vnd.github+json",
     },
   });
+  console.log("GitHub repo count:", data.total_count);
   return data.total_count;
 }
 
