@@ -6,7 +6,7 @@
   "scripts": {
     "metrics": "ts-node scripts/metrics.ts",
     "dev": "npm run metrics && next dev",
-    "build": "next build",
+    "build": "npm run metrics && next build",
     "start": "next start",
     "lint": "eslint"
   },

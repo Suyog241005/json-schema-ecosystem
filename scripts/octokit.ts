@@ -19,11 +19,13 @@ export async function searchCode() {
         "X-GitHub-Api-Version": "2022-11-28",
       },
     });
+    console.log(
+      "✅ Successfully fetched github repos ",
+      response.data.total_count,
+    );
     return response;
   } catch (error) {
-    console.error(error);
+    console.error("❌ Failed to fetch github repos", error);
     return null;
   }
 }
-
-export const result = await searchCode();
