@@ -35,7 +35,7 @@ async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
 
 async function getGithubRepoCount() {
   const result = await axios.get(
-    "https://api.github.com/search/repositories?q=topic:json-schema",
+    "https://api.github.com/search/repositories?q=topic:json-schema&per_page=1",
   );
   console.log("githubRepoCount ",result.data.total_count);
   return result.data.total_count;
