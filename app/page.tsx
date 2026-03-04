@@ -65,16 +65,21 @@ export default function MetricsPage() {
             borderSkipped: false,
             barPercentage: 0.4,
             datalabels: {
-              color: "white",
+              color: () => {
+                const isDark = window.localStorage.getItem("theme") === "dark";
+                return isDark ? "white" : "black";
+              },
               font: {
                 size: 14,
-                weight: "bold",
               },
               anchor: "end",
               align: "top",
               formatter: (value) => value.toLocaleString(),
-              textStrokeColor: "rgba(0, 0, 0, 0.3)",
-              textStrokeWidth: 2,
+              textStrokeColor: () => {
+                const isDark = window.localStorage.getItem("theme") === "dark";
+                return isDark ? "white" : "black";
+              },
+              textStrokeWidth: 1,
               padding: 4,
               offset: -5,
             },
