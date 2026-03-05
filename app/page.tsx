@@ -16,9 +16,30 @@ import Link from "next/link";
 const npmUrl = "https://npmjs.com/package/";
 
 export default function MetricsPage() {
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [data, setData] = useState<MetricsOutput | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const updateTheme = () => {
+      const isDark =
+        document.documentElement.classList.contains("dark") ||
+        window.localStorage.getItem("theme") === "dark";
+      setTheme(isDark ? "dark" : "light");
+    };
+
+    updateTheme(); // initial
+
+    // Listen for changes (adjust event if your theme system emits one)
+    const observer = new MutationObserver(updateTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     fetch("/api/metrics")
@@ -65,20 +86,14 @@ export default function MetricsPage() {
             borderSkipped: false,
             barPercentage: 0.4,
             datalabels: {
-              color: () => {
-                const isDark = window.localStorage.getItem("theme") === "dark";
-                return isDark ? "white" : "black";
-              },
+              color: theme === "dark" ? "white" : "black",
               font: {
                 size: 14,
               },
               anchor: "end",
               align: "top",
               formatter: (value) => value.toLocaleString(),
-              textStrokeColor: () => {
-                const isDark = window.localStorage.getItem("theme") === "dark";
-                return isDark ? "white" : "black";
-              },
+              textStrokeColor: theme === "dark" ? "white" : "black",
               textStrokeWidth: 1,
               padding: 4,
               offset: -5,
@@ -130,7 +145,7 @@ export default function MetricsPage() {
     return () => {
       myChart.destroy();
     };
-  }, [data]);
+  }, [data, theme]);
 
   if (loading)
     return (
