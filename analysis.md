@@ -24,15 +24,22 @@ The gap between ajv and the other validators also tells us something: the ecosys
 
 ## How would you automate this to run weekly?
 
-Using a GitHub Actions scheduled workflow:
+This is already implemented and running via GitHub Actions. The workflow file is at
+`.github/workflows/metrics.yml` and triggers every Monday at midnight UTC.
+You can also trigger a manual run from the [Actions tab](https://github.com/Suyog241005/json-schema-ecosystem/actions/workflows/weekly.yml).
+
+The workflow:
 
 ```yaml
 name: Collect Ecosystem Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * 1" # Every Monday at midnight UTC
-  workflow_dispatch: # Allow manual runs
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   collect-metrics:
@@ -46,7 +53,7 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Run metrics script
         env:
@@ -69,7 +76,7 @@ This approach:
 - Triggers a Vercel redeploy automatically, keeping the dashboard fresh
 - Supports manual runs via `workflow_dispatch` for testing
 
-Over time, storing weekly snapshots builds a historical dataset that can power trend charts — showing how downloads and repo counts have changed month over month.
+Over time, the weekly commits create a historical record in git (via commit history and diffs) that can be used to analyze trends in downloads and repo counts. If we wanted a more analysis-friendly dataset, we could also write a dated snapshot file (e.g., `snapshots/metrics-YYYY-MM-DD.json`) each week.
 
 ---
 

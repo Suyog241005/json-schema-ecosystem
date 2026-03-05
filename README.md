@@ -115,6 +115,12 @@ Experience the live demonstration of:
 - Interactive repository exploration
 - Professional UI with theme support
 
+## ⚙️ Automation
+
+Metrics are automatically collected every Monday via GitHub Actions and committed
+back to the repo, keeping the dashboard fresh. You can also trigger a manual run
+from the [Actions tab](https://github.com/Suyog241005/json-schema-ecosystem/actions/workflows/weekly.yml).
+
 ## 🔧 Setup
 
 ### Prerequisites
@@ -154,3 +160,4 @@ Experience the live demonstration of:
 
 3. Open your browser and navigate to
    http://localhost:3000
+  
