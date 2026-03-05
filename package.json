@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "metrics": "ts-node scripts/metrics.ts",
+    "metrics": "ts-node --esm scripts/metrics.ts",
     "dev": "npm run metrics && next dev",
     "build": "npm run metrics && next build",
     "start": "next start",
