@@ -29,11 +29,18 @@ See [`evaluation.md`](./evaluation.md) for:
 
 - Review of the existing PoC / approach
 - Assessment of what works well vs gaps
-- Recommendations and next steps --> 
+- Recommendations and next steps -->
 
 ## 🚀 Features
 
 ### Metrics Dashboard ([`/`](http://localhost:3000/))
+
+- **Real-time data fetching** from npm API
+- **Interactive bar charts** with Chart.js
+- **Professional card layouts** with linear designs
+- **Error handling** and loading states
+
+### Repository Explorer ([`/repo`](http://localhost:3000/repo))
 
 - **Top repositories** sorted by stars
 - **Rich repository cards** displaying:
@@ -44,14 +51,6 @@ See [`evaluation.md`](./evaluation.md) for:
   - Last updated timestamp
   - Active status indicators
 - **GitHub integration** with direct repository links
-
-### Repository Explorer ([`/repo`](http://localhost:3000/repo))
-
-- **Real-time data fetching** from npm and GitHub APIs
-- **Interactive bar charts** with Chart.js
-- **Professional card layouts** with linear designs
-- **Animated UI elements** and smooth transitions
-- **Error handling** and loading states
 
 ### Navigation & UX
 
@@ -160,4 +159,3 @@ from the [Actions tab](https://github.com/Suyog241005/json-schema-ecosystem/acti
 
 3. Open your browser and navigate to
    http://localhost:3000
-  
