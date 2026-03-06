@@ -2,10 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import {
-  paginatedRepos,
-  PaginatedReposResponse,
-} from "@/scripts/octokit";
+import { paginatedRepos, PaginatedReposResponse } from "@/scripts/octokit";
 import {
   Card,
   CardContent,
@@ -223,6 +220,7 @@ export function RepoPageContent() {
               </CardContent>
             </Card>
           </div>
+          {/* Error state */}
           {!loading && !data && (
             <Card className="p-12 text-center border-dashed">
               <CardHeader>
@@ -244,6 +242,12 @@ export function RepoPageContent() {
                 </CardDescription>
               </CardHeader>
             </Card>
+          )}
+          {/* Loading state */}
+          {loading && (
+            <div className="flex items-center justify-center py-12">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+            </div>
           )}
           {/* Main Content */}
           <div className="space-y-6">
