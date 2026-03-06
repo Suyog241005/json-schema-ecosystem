@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "metrics": "tsx scripts/metrics.ts",
-    "dev": "npm run metrics && next dev",
-    "build": "npm run metrics && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
