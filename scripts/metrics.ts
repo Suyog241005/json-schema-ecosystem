@@ -1,4 +1,4 @@
-import { writeFileSync } from "fs";
+import { existsSync, mkdirSync, writeFileSync } from "fs";
 import axios from "axios";
 
 interface NpmDownloadsResponse {
@@ -81,7 +81,19 @@ export async function runMetrics() {
       githubRepoCount: githubRepoCount,
     };
 
-    writeFileSync("metrics-output.json", JSON.stringify(output, null, 2));
+    const snapshotsDir = "snapshots";
+    if (!existsSync(snapshotsDir)) {
+      mkdirSync(snapshotsDir, { recursive: true });
+    }
+
+    writeFileSync(
+      `snapshots/metrics-output-${new Date().toISOString().split("T")[0]}.json`,
+      JSON.stringify(output, null, 2),
+    );
+    writeFileSync(
+      "snapshots/latest-metrics.json",
+      JSON.stringify(output, null, 2),
+    );
     console.log("✅ metrics-output.json written");
   } catch (err) {
     console.error("❌ Failed to run metrics", err);

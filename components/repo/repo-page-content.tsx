@@ -10,7 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { RepoCard } from "@/components/repo-card";
+import { RepoCard } from "@/components/repo/repo-card";
 import {
   Pagination,
   PaginationContent,
@@ -34,7 +34,7 @@ export function RepoPageContent() {
       const result = await paginatedRepos({ per_page: 20, page: currentPage });
 
       if (result === null) {
-        // Handle API limit reached - maybe redirect to page 1?
+        // Handle API limit reached
         handlePageChange(1);
         return;
       }
