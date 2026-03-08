@@ -10,7 +10,9 @@ export default function RepoPage() {
         </div>
       }
     >
-      <RepoPageContent />
+      <div className="container mx-auto p-4">
+        <RepoPageContent />
+      </div>
     </Suspense>
   );
 }
