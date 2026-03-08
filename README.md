@@ -14,7 +14,7 @@ This project implements a Proof of Concept (PoC) for JSON Schema ecosystem obser
 - **Interactive Chart.js visualization** with professional UI
 - **Metrics collection script** that saves data to `metrics-output.json`
 - **Next.js integration** with API routes and client-side rendering
-<!-- 
+<!--
 ## 📄 Qualification Analysis
 
 See [`analysis.md`](./analysis.md) for:
@@ -83,6 +83,28 @@ See [`evaluation.md`](./evaluation.md) for:
    - Endpoint: `https://api.github.com/search/repositories?q=topic:json-schema`
    - Data: Repository count, metadata, statistics
 
+#### How It Works
+
+1. **Daily Snapshots**: Each run creates a dated file `metrics-output-YYYY-MM-DD.json`
+2. **Latest Alias**: `latest-metrics.json` always points to the most recent data
+3. **Historical Tracking**: All snapshots are preserved for trend analysis
+4. **API Integration**: The dashboard reads from `latest-metrics.json`
+
+#### Benefits
+
+- ✅ **Historical Analysis**: Track ecosystem changes over time
+- ✅ **Data Integrity**: No data loss during updates
+- ✅ **Easy Rollback**: Access any previous snapshot
+- ✅ **Trend Tracking**: Compare metrics across different dates
+
+#### Automation
+
+The GitHub Actions workflow automatically:
+
+- Creates new snapshots weekly
+- Updates `latest-metrics.json`
+- Commits all snapshot files to the repository
+
 ### Output Format
 
 ```json
@@ -103,6 +125,13 @@ See [`evaluation.md`](./evaluation.md) for:
   "githubRepoCount": 2377
 }
 ```
+
+### Snapshot System
+
+The metrics collection uses a **snapshot-based storage system**:
+
+- **Latest snapshot**: `snapshots/latest-metrics.json` - Always contains the most recent metrics
+- **Historical snapshots**: `snapshots/metrics-output-YYYY-MM-DD.json` - Weekly snapshots for historical tracking
 
 ## 🌐 Live Demo
 
@@ -149,7 +178,7 @@ from the [Actions tab](https://github.com/Suyog241005/json-schema-ecosystem/acti
 
    Collect metrics
 
-   The metrics are collected and saved to `metrics-output.json` file.
+   The metrics are collected and saved to `snapshots/latest-metrics.json` file.
 
    ```bash
    npm run dev
