@@ -162,7 +162,7 @@ export const TrendsChart = () => {
             },
           },
           y: {
-            type:"logarithmic",
+            type: "logarithmic",
             grid: {
               color: gridColor,
             },
@@ -186,8 +186,10 @@ export const TrendsChart = () => {
     return (
       <Card className="shadow-lg">
         <CardHeader>
-          <CardTitle className="text-xl">Weekly Download Trends</CardTitle>
-          <CardDescription>Historical npm download trends</CardDescription>
+          <CardTitle className="text-4xl">Weekly Download Trends</CardTitle>
+          <CardDescription className="text-lg">
+            Historical npm download trends
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="h-80 w-full flex items-center justify-center">
@@ -202,8 +204,10 @@ export const TrendsChart = () => {
     return (
       <Card className="shadow-lg">
         <CardHeader>
-          <CardTitle className="text-xl">Weekly Download Trends</CardTitle>
-          <CardDescription>Historical npm download trends</CardDescription>
+          <CardTitle className="text-4xl">Weekly Download Trends</CardTitle>
+          <CardDescription className="text-lg">
+            Historical npm download trends
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="h-80 w-full flex items-center justify-center">
@@ -216,6 +220,12 @@ export const TrendsChart = () => {
 
   return (
     <Card className="shadow-lg">
+      <CardHeader>
+        <CardTitle className="text-4xl">Weekly Download Trends</CardTitle>
+        <CardDescription className="text-lg">
+          Historical npm download trends
+        </CardDescription>
+      </CardHeader>
       <CardContent>
         <div className="h-80 w-full">
           <canvas id="trendsChart" className="w-full h-full"></canvas>
