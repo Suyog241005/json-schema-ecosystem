@@ -153,7 +153,7 @@ export function MetricsPageContent() {
     );
 
   return (
-    <div className="h-full bg-linear-to-br from-background via-background to-muted/20">
+    <div className="h-full">
       <div className="mx-auto">
         {/* Metrics Cards */}
         {data ? <MetricsCard data={data} /> : null}

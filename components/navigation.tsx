@@ -46,6 +46,17 @@ export function Navigation() {
               >
                 <div className="flex items-center gap-2">Repositories</div>
               </Link>
+              <Link
+                href="/bowtie"
+                className={cn(
+                  "text-sm font-medium transition-all duration-200 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5",
+                  pathname === "/bowtie"
+                    ? "text-primary bg-primary/10 shadow-sm"
+                    : "text-muted-foreground",
+                )}
+              >
+                <div className="flex items-center gap-2">Bowtie</div>
+              </Link>
             </div>
           </div>
 
