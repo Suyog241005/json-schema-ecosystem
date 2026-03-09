@@ -12,9 +12,9 @@ import {
 
 interface TrendData {
   timestamp: string;
-  ajv: number;
-  jsonschema: number;
-  hyperjump: number;
+  ajv: { package: string; weeklyDownloads: number };
+  jsonschema: { package: string; weeklyDownloads: number };
+  hyperjump: { package: string; weeklyDownloads: number };
 }
 
 export const TrendsChart = () => {
@@ -47,33 +47,10 @@ export const TrendsChart = () => {
     const loadTrendData = async () => {
       try {
         setLoading(true);
-        const sampleData: TrendData[] = [
-          {
-            timestamp: "2026-02-01",
-            ajv: 245000000,
-            jsonschema: 5400000,
-            hyperjump: 280000,
-          },
-          {
-            timestamp: "2026-02-15",
-            ajv: 250000000,
-            jsonschema: 5500000,
-            hyperjump: 290000,
-          },
-          {
-            timestamp: "2026-03-01",
-            ajv: 255000000,
-            jsonschema: 5600000,
-            hyperjump: 295000,
-          },
-          {
-            timestamp: "2026-03-08",
-            ajv: 258381792,
-            jsonschema: 5650493,
-            hyperjump: 300874,
-          },
-        ];
-        setTrendData(sampleData);
+        const response = await fetch("/api/trends");
+        const data: TrendData[] = await response.json();
+        console.log(data);
+        setTrendData(data);
       } catch (err) {
         setError("Failed to load trend data");
         console.error(err);
@@ -107,7 +84,7 @@ export const TrendsChart = () => {
         datasets: [
           {
             label: "ajv",
-            data: trendData.map((d) => d.ajv),
+            data: trendData.map((d) => d.ajv.weeklyDownloads),
             borderColor: "hsl(221, 83%, 53%)",
             backgroundColor: "hsl(221, 83%, 53%, 0.1)",
             borderWidth: 3,
@@ -120,7 +97,7 @@ export const TrendsChart = () => {
           },
           {
             label: "jsonschema",
-            data: trendData.map((d) => d.jsonschema),
+            data: trendData.map((d) => d.jsonschema.weeklyDownloads),
             borderColor: "hsl(142, 71%, 45%)",
             backgroundColor: "hsl(142, 71%, 45%, 0.1)",
             borderWidth: 3,
@@ -133,7 +110,7 @@ export const TrendsChart = () => {
           },
           {
             label: "@hyperjump/json-schema",
-            data: trendData.map((d) => d.hyperjump),
+            data: trendData.map((d) => d.hyperjump.weeklyDownloads),
             borderColor: "hsl(340, 82%, 62%)",
             backgroundColor: "hsl(340, 82%, 62%, 0.1)",
             borderWidth: 3,
@@ -238,10 +215,6 @@ export const TrendsChart = () => {
 
   return (
     <Card className="shadow-lg">
-      <CardHeader>
-        {/* <CardTitle className="text-xl">Weekly Download Trends</CardTitle>
-        <CardDescription>Historical npm download trends</CardDescription> */}
-      </CardHeader>
       <CardContent>
         <div className="h-80 w-full">
           <canvas id="trendsChart" className="w-full h-full"></canvas>
