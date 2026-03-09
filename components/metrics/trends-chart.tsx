@@ -162,6 +162,7 @@ export const TrendsChart = () => {
             },
           },
           y: {
+            type:"logarithmic",
             grid: {
               color: gridColor,
             },

@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-03-08T06:21:43.042Z",
+    "timestamp": "2026-02-09T01:51:25.596Z",
   "ajv": {
     "package": "ajv",
-    "weeklyDownloads": 258381792
+    "weeklyDownloads": 245000000
   },
   "hyperjump": {
     "package": "@hyperjump/json-schema",
-    "weeklyDownloads": 300874
+    "weeklyDownloads": 285000
   },
   "jsonschema": {
     "package": "jsonschema",
-    "weeklyDownloads": 5650493
+    "weeklyDownloads": 5400000
   },
   "githubRepoCount": 2393
 }
