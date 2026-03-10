@@ -88,4 +88,4 @@ fs.writeFileSync(
 );
 
 // Print output
-console.log("📊 Generated bowtie/bowtie-scores.json");
+console.log("Generated bowtie/bowtie-scores.json");

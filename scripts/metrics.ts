@@ -29,10 +29,10 @@ async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
   try {
     const url = `https://api.npmjs.org/downloads/point/last-week/${pkg}`;
     const response = await axios.get<NpmDownloadsResponse>(url);
-    console.log("✅ npm weekly downloads for ", pkg, response.data);
+    console.log("npm weekly downloads for ", pkg, response.data);
     return response.data.downloads;
   } catch (error) {
-    console.error("❌ Failed to fetch npm weekly downloads for ", pkg, error);
+    console.error("Failed to fetch npm weekly downloads for ", pkg, error);
     return 1;
   }
 }
@@ -42,10 +42,10 @@ async function getGithubRepoCount() {
     const result = await axios.get(
       "https://api.github.com/search/repositories?q=topic:json-schema&per_page=1",
     );
-    console.log("✅ githubRepoCount ", result.data.total_count);
+    console.log("githubRepoCount ", result.data.total_count);
     return result.data.total_count;
   } catch (error) {
-    console.error("❌ Failed to fetch github repo count", error);
+    console.error("Failed to fetch github repo count", error);
     return 1;
   }
 }
@@ -94,9 +94,9 @@ export async function runMetrics() {
       "snapshots/latest-metrics.json",
       JSON.stringify(output, null, 2),
     );
-    console.log("✅ metrics-output.json written");
+    console.log("metrics-output.json written");
   } catch (err) {
-    console.error("❌ Failed to run metrics", err);
+    console.error("Failed to run metrics", err);
     process.exit(1);
   }
 }

@@ -31,7 +31,7 @@ export function RepoPageContent() {
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
-      const result = await paginatedRepos({ per_page: 20, page: currentPage });
+      const result = await paginatedRepos({ per_page: 21, page: currentPage });
 
       if (result === null) {
         // Handle API limit reached
@@ -53,13 +53,12 @@ export function RepoPageContent() {
   const renderPagination = () => {
     if (!data || data.totalPages <= 1) return null;
 
-    // GitHub API limitation: max 1000 results = 50 pages with 20 per page
-    const maxPages = Math.min(data.totalPages, 50);
+    const maxPages = data.totalPages;
 
     const pages = [];
     const maxVisible = 5;
     let startPage = Math.max(1, currentPage - Math.floor(maxVisible / 2));
-    let endPage = Math.min(data.totalPages, startPage + maxVisible - 1);
+    let endPage = Math.min(maxPages, startPage + maxVisible - 1);
 
     if (endPage - startPage < maxVisible - 1) {
       startPage = Math.max(1, endPage - maxVisible + 1);

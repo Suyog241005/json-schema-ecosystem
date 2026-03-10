@@ -22,12 +22,12 @@ export async function searchCode() {
       },
     });
     console.log(
-      "✅ Successfully fetched github repos ",
+      "Successfully fetched github repos ",
       response.data.total_count,
     );
     return response;
   } catch (error) {
-    console.error("❌ Failed to fetch github repos", error);
+    console.error("Failed to fetch github repos", error);
     return null;
   }
 }
@@ -41,7 +41,7 @@ export interface PaginatedReposResponse {
 }
 
 export async function paginatedRepos({
-  per_page = 20,
+  per_page = 21,
   page = 1,
 }: {
   per_page?: number;
@@ -54,7 +54,7 @@ export async function paginatedRepos({
 
     if (page > maxPage) {
       console.warn(
-        `⚠️ GitHub API limitation: Cannot fetch page ${page}. Maximum page is ${maxPage} (${maxResultCount} results total)`,
+        `GitHub API limitation: Cannot fetch page ${page}. Maximum page is ${maxPage} (${maxResultCount} results total)`,
       );
       return null;
     }
@@ -84,7 +84,7 @@ export async function paginatedRepos({
       perPage: per_page,
     };
   } catch (error) {
-    console.error("❌ Failed to fetch github repos", error);
+    console.error("Failed to fetch github repos", error);
     return null;
   }
 }
