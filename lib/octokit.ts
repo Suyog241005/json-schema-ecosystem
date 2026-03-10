@@ -1,5 +1,6 @@
 import { Octokit } from "octokit";
 import { Endpoints } from "@octokit/types";
+import { drafts } from "@/lib/constants";
 
 export const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
@@ -9,28 +10,6 @@ export type SearchRepositoriesResponse =
   Endpoints["GET /search/repositories"]["response"]["data"];
 
 export type RepoItem = SearchRepositoriesResponse["items"][number];
-
-export async function searchCode() {
-  try {
-    const response = await octokit.request("GET /search/repositories", {
-      q: "topic:json-schema",
-      sort: "stars",
-      order: "desc",
-      per_page: 100,
-      headers: {
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
-    });
-    console.log(
-      "Successfully fetched github repos ",
-      response.data.total_count,
-    );
-    return response;
-  } catch (error) {
-    console.error("Failed to fetch github repos", error);
-    return null;
-  }
-}
 
 export interface PaginatedReposResponse {
   items: RepoItem[];
@@ -86,5 +65,27 @@ export async function paginatedRepos({
   } catch (error) {
     console.error("Failed to fetch github repos", error);
     return null;
+  }
+}
+
+export async function getDraftAdoption() {
+  try {
+    const results = await Promise.all(
+      drafts.map(async (draft) => {
+        const response = await octokit.request("GET /search/code", {
+          q: draft.query,
+          per_page: 1,
+        });
+        return {
+          draft: draft.name,
+          count: response.data.total_count,
+          url: draft.query,
+        };
+      }),
+    );
+    return results;
+  } catch (error) {
+    console.error("Failed to fetch draft adoption", error);
+    return [];
   }
 }

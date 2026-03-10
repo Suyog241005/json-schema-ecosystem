@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import axios from "axios";
 
 interface BowtieData {
   implementations: {
@@ -55,11 +56,8 @@ export const BowtiePageContent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/bowtie");
-        if (!response.ok) {
-          throw new Error("Failed to fetch bowtie scores");
-        }
-        const data = await response.json();
+        const response = await axios.get("/api/bowtie");
+        const data = response.data;
         setBowtieData(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Unknown error");

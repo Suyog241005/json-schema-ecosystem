@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import axios from "axios";
 
 interface TrendData {
   timestamp: string;
@@ -47,8 +48,8 @@ export const TrendsChart = () => {
     const loadTrendData = async () => {
       try {
         setLoading(true);
-        const response = await fetch("/api/trends");
-        const data: TrendData[] = await response.json();
+        const response = await axios.get("/api/trends");
+        const data: TrendData[] = response.data;
         console.log(data);
         setTrendData(data);
       } catch (err) {
@@ -234,3 +235,4 @@ export const TrendsChart = () => {
     </Card>
   );
 };
+

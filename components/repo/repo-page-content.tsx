@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { paginatedRepos, PaginatedReposResponse } from "@/scripts/octokit";
+import { paginatedRepos, PaginatedReposResponse } from "@/lib/octokit";
 import {
   Card,
   CardContent,

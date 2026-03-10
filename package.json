@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "metrics": "tsx scripts/metrics.ts",
-    "bowtie": "tsx bowtie-score.ts",
+    "bowtie": "tsx scripts/bowtie-score.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

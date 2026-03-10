@@ -18,9 +18,7 @@ export function Navigation() {
               <div className="h-8 w-8 rounded-lg bg-linear-to-br from-primary to-primary/80 text-primary-foreground flex items-center justify-center font-bold transition-all duration-200 group-hover:shadow-lg group-hover:scale-105">
                 JS
               </div>
-              <span className="font-bold bg-linear-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                JSON Schema Ecosystem
-              </span>
+              <span className="font-bold">JSON Schema Ecosystem</span>
             </Link>
 
             <div className="flex space-x-6">
@@ -56,6 +54,17 @@ export function Navigation() {
                 )}
               >
                 <div className="flex items-center gap-2">Bowtie</div>
+              </Link>
+              <Link
+                href="/drafts"
+                className={cn(
+                  "text-sm font-medium transition-all duration-200 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5",
+                  pathname === "/drafts"
+                    ? "text-primary bg-primary/10 shadow-sm"
+                    : "text-muted-foreground",
+                )}
+              >
+                <div className="flex items-center gap-2">Drafts</div>
               </Link>
             </div>
           </div>

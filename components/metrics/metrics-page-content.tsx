@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/card";
 import type { MetricsOutput } from "@/scripts/metrics";
 import { MetricsCard } from "./metrics-card";
+import axios from "axios";
 
 export function MetricsPageContent() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
@@ -39,10 +40,9 @@ export function MetricsPageContent() {
   }, []);
 
   useEffect(() => {
-    fetch("/api/metrics")
+    axios.get("/api/metrics")
       .then((r) => {
-        if (!r.ok) throw new Error("Failed to fetch metrics");
-        return r.json() as Promise<MetricsOutput>;
+        return r.data as MetricsOutput;
       })
       .then((json) => {
         setData(json);
