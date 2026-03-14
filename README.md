@@ -2,6 +2,8 @@
 
 A comprehensive Next.js dashboard for **JSON Schema ecosystem observability** that demonstrates real-time metrics collection, visualization, and repository analysis.
 
+**`For setup instructions`, see [SETUP](#-setup)**
+
 ## 🎯 Qualification Task Overview
 
 This project implements a Proof of Concept (PoC) for JSON Schema ecosystem observability:
