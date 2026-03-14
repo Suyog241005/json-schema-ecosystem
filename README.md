@@ -36,11 +36,9 @@ See [`evaluation.md`](./evaluation.md) for:
 
 ### Metrics Dashboard ([`/`](https://json-schema-ecosystem.vercel.app/))
 
-- **Real-time data fetching** from npm API
 - **Interactive bar charts** with Chart.js for weekly downloads
 - **Trend analysis** with logarithmic scale line charts
 - **Professional card layouts** with linear designs
-- **Error handling** and loading states
 
 ### Repository Explorer ([`/repo`](https://json-schema-ecosystem.vercel.app/repo))
 
@@ -57,7 +55,6 @@ See [`evaluation.md`](./evaluation.md) for:
 
 ### Bowtie Test Results ([`/bowtie`](https://json-schema-ecosystem.vercel.app/bowtie))
 
-- **Implementation compliance scores** for 32 JSON Schema implementations
 - **Horizontal bar chart** with performance-based color coding
 - **Detailed statistics** showing pass/fail ratios
 - **Interactive tooltips** with test details
@@ -65,10 +62,8 @@ See [`evaluation.md`](./evaluation.md) for:
 
 ### Draft Adoption Analysis ([`/drafts`](https://json-schema-ecosystem.vercel.app/drafts))
 
-- **JSON Schema draft version distribution** across GitHub repositories
 - **Pie chart visualization** with adoption percentages
 - **External links** to official JSON Schema specifications
-- **Real-time search results** via GitHub API
 
 ## 🛠 Tech Stack
 
