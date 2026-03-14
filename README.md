@@ -15,7 +15,6 @@ This project implements a Proof of Concept (PoC) for JSON Schema ecosystem obser
 - **Bowtie test results** showing JSON Schema implementation compliance scores
 - **JSON Schema draft adoption** tracking across different versions
 - **Metrics collection scripts** with automated data gathering
-- **Next.js integration** with API routes and client-side rendering
 
 ## 📄 Qualification Analysis
 
@@ -71,12 +70,6 @@ See [`evaluation.md`](./evaluation.md) for:
 - **External links** to official JSON Schema specifications
 - **Real-time search results** via GitHub API
 
-### Navigation & UX
-
-- **Modern navigation** with active state indicators
-- **Theme toggle** supporting light/dark/system preferences
-- **Professional styling** with minimal, clean interface
-
 ## 🛠 Tech Stack
 
 - **Framework**: Next.js 16 with App Router
@@ -92,25 +85,12 @@ See [`evaluation.md`](./evaluation.md) for:
 ### Data Sources
 
 1. **npm API**: Weekly downloads for key JSON Schema libraries
-   - ajv
-     - Endpoint: `https://api.npmjs.org/downloads/point/last-week/ajv`
-   - jsonschema
-     - Endpoint: `https://api.npmjs.org/downloads/point/last-week/jsonschema`
-   - @hyperjump/json-schema
-     - Endpoint: `https://api.npmjs.org/downloads/point/last-week/@hyperjump/json-schema`
 
 2. **GitHub API**: Repository search for `json-schema` topic
-   - Endpoint: `https://api.github.com/search/repositories?q=topic:json-schema`
-   - Data: Repository count, metadata, statistics
 
 3. **Bowtie Test Suite**: Implementation compliance testing
-   - 32+ implementations across multiple languages
-   - 2020-12 dialect compliance testing
-   - Performance scoring and ranking
 
 4. **Draft Adoption Analysis**: JSON Schema draft version distribution
-   - Search the references of the draft versions in repositories
-   - Count the occurrences of each draft version
 
 ### Storage System
 
@@ -227,12 +207,6 @@ json-schema-ecosystem/
 ## 🌐 Live Demo
 
 **Live URL**: [JSON Schema Ecosystem Dashboard](https://json-schema-ecosystem.vercel.app)
-
-Experience the live demonstration of:
-
-- Real-time metrics visualization with Chart.js
-- Interactive repository exploration
-- Professional UI with theme support
 
 ## 🔧 Setup
 
