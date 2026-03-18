@@ -4,82 +4,76 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./mode-toggle";
-import { GithubIcon } from "lucide-react";
+import { GithubIcon, LayoutDashboard, Database, ShieldCheck, FileCode } from "lucide-react";
+import { motion } from "framer-motion";
+
+const navItems = [
+  { href: "/", label: "Metrics", icon: LayoutDashboard },
+  { href: "/repo", label: "Repositories", icon: Database },
+  { href: "/bowtie", label: "Compliance", icon: ShieldCheck },
+  { href: "/drafts", label: "Drafts", icon: FileCode },
+];
 
 export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center space-x-8">
-            <Link href="/" className="flex items-center space-x-2 group">
-              <div className="h-8 w-8 rounded-lg bg-linear-to-br from-primary to-primary/80 text-primary-foreground flex items-center justify-center font-bold transition-all duration-200 group-hover:shadow-lg group-hover:scale-105">
-                JS
-              </div>
-              <span className="font-bold">JSON Schema Ecosystem</span>
-            </Link>
-
-            <div className="flex space-x-6">
-              <Link
-                href="/"
-                className={cn(
-                  "text-sm font-medium transition-all duration-200 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5",
-                  pathname === "/"
-                    ? "text-primary bg-primary/10 shadow-sm"
-                    : "text-muted-foreground",
-                )}
-              >
-                <div className="flex items-center gap-2">Metrics</div>
-              </Link>
-              <Link
-                href="/repo"
-                className={cn(
-                  "text-sm font-medium transition-all duration-200 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5",
-                  pathname === "/repo"
-                    ? "text-primary bg-primary/10 shadow-sm"
-                    : "text-muted-foreground",
-                )}
-              >
-                <div className="flex items-center gap-2">Repositories</div>
-              </Link>
-              <Link
-                href="/bowtie"
-                className={cn(
-                  "text-sm font-medium transition-all duration-200 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5",
-                  pathname === "/bowtie"
-                    ? "text-primary bg-primary/10 shadow-sm"
-                    : "text-muted-foreground",
-                )}
-              >
-                <div className="flex items-center gap-2">Bowtie</div>
-              </Link>
-              <Link
-                href="/drafts"
-                className={cn(
-                  "text-sm font-medium transition-all duration-200 hover:text-primary px-3 py-2 rounded-lg hover:bg-primary/5",
-                  pathname === "/drafts"
-                    ? "text-primary bg-primary/10 shadow-sm"
-                    : "text-muted-foreground",
-                )}
-              >
-                <div className="flex items-center gap-2">Drafts</div>
-              </Link>
+    <div className="container mx-auto px-4 md:px-8 max-w-7xl">
+      <div className="flex h-20 items-center justify-between">
+        <div className="flex items-center space-x-12">
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="relative h-10 w-10 rounded-xl bg-primary flex items-center justify-center font-bold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:-rotate-3 overflow-hidden">
+               <div className="absolute inset-0 bg-linear-to-tr from-white/20 to-transparent" />
+               JS
             </div>
-          </div>
+            <div className="flex flex-col -space-y-1">
+               <span className="font-black text-xl tracking-tighter">JSON SCHEMA</span>
+               <span className="text-[10px] font-bold text-muted-foreground tracking-[0.2em] uppercase">Ecosystem</span>
+            </div>
+          </Link>
 
-          <div className="flex items-center space-x-4">
-            <ModeToggle />
-            <Link
-              href="https://github.com/Suyog241005/json-schema-ecosystem"
-              target="_blank"
-            >
-              <GithubIcon className="w-7 h-7 cursor-pointer" />
-            </Link>
-          </div>
+          <nav className="hidden md:flex items-center space-x-2">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "relative flex items-center gap-2 px-4 py-2.5 text-sm font-semibold transition-all duration-200 rounded-xl",
+                    isActive 
+                      ? "text-primary bg-primary/5" 
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  )}
+                >
+                  <item.icon size={18} className={cn(isActive ? "text-primary" : "text-muted-foreground")} />
+                  {item.label}
+                  {isActive && (
+                    <motion.div 
+                      layoutId="nav-pill"
+                      className="absolute -bottom-0.5 left-4 right-4 h-0.5 bg-primary rounded-full"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              );
+            })}
+          </nav>
+        </div>
+
+        <div className="flex items-center space-x-6">
+          <div className="h-6 w-px bg-border/50 hidden md:block" />
+          <ModeToggle />
+          <Link
+            href="https://github.com/Suyog241005/json-schema-ecosystem"
+            target="_blank"
+            className="p-2.5 rounded-xl hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+          >
+            <GithubIcon size={22} />
+          </Link>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
+

@@ -22,9 +22,13 @@ export interface PaginatedReposResponse {
 export async function paginatedRepos({
   per_page = 21,
   page = 1,
+  q = "",
+  sort = "stars",
 }: {
   per_page?: number;
   page?: number;
+  q?: string;
+  sort?: string;
 }): Promise<PaginatedReposResponse | null> {
   try {
     // GitHub API limitation: max 1000 results
@@ -38,9 +42,11 @@ export async function paginatedRepos({
       return null;
     }
 
+    const query = `topic:json-schema ${q}`;
+
     const response = await octokit.request("GET /search/repositories", {
-      q: "topic:json-schema",
-      sort: "stars",
+      q: query,
+      sort: sort as any,
       order: "desc",
       per_page,
       page,
@@ -48,6 +54,7 @@ export async function paginatedRepos({
         "X-GitHub-Api-Version": "2022-11-28",
       },
     });
+
 
     const totalCount = response.data.total_count;
 
