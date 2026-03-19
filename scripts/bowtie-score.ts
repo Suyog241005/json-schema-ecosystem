@@ -1,7 +1,7 @@
 import fs, { existsSync, mkdirSync, writeFileSync } from "fs";
 
 // Read test results
-const content = fs.readFileSync("bowtie/bowtie-implementations.json", "utf-8");
+const content = fs.readFileSync("data/bowtie/bowtie-implementations.json", "utf-8");
 
 // Extract implementations using regex
 const implementationMatches = [
@@ -80,17 +80,17 @@ const output = {
 
 // Save to latest
 fs.writeFileSync(
-  "bowtie/bowtie-scores.json",
+  "data/bowtie/bowtie-scores.json",
   JSON.stringify(output, null, 2),
   "utf-8",
 );
 
 // Save historical snapshot
-const snapshotsDir = "snapshots/bowtie";
+const snapshotsDir = "data/bowtie/snapshots";
 if (!existsSync(snapshotsDir)) {
   mkdirSync(snapshotsDir, { recursive: true });
 }
 const dateStr = new Date().toISOString().split("T")[0];
 writeFileSync(`${snapshotsDir}/bowtie-output-${dateStr}.json`, JSON.stringify(output, null, 2));
 
-console.log(`Generated bowtie/bowtie-scores.json and snapshot ${dateStr}`);
+console.log(`Generated data/bowtie/bowtie-scores.json and snapshot ${dateStr}`);

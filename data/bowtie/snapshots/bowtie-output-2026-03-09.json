@@ -1,0 +1,202 @@
+{
+  "implementations": {
+    "python-jsonschema": {
+      "totalTests": 1277,
+      "passedTests": 1263,
+      "failedTests": 14,
+      "scorePercentage": 98.9
+    },
+    "go-jsonschema": {
+      "totalTests": 1277,
+      "passedTests": 1268,
+      "failedTests": 9,
+      "scorePercentage": 99.3
+    },
+    "ruby-json_schemer": {
+      "totalTests": 1277,
+      "passedTests": 1266,
+      "failedTests": 11,
+      "scorePercentage": 99.14
+    },
+    "lua-schema": {
+      "totalTests": 1264,
+      "passedTests": 1227,
+      "failedTests": 37,
+      "scorePercentage": 97.07
+    },
+    "js-json-schema": {
+      "totalTests": 1273,
+      "passedTests": 1226,
+      "failedTests": 47,
+      "scorePercentage": 96.31
+    },
+    "swift-swift-json-schema": {
+      "totalTests": 1277,
+      "passedTests": 1261,
+      "failedTests": 16,
+      "scorePercentage": 98.75
+    },
+    "rust-jsonschema": {
+      "totalTests": 1277,
+      "passedTests": 1268,
+      "failedTests": 9,
+      "scorePercentage": 99.3
+    },
+    "cpp-jsoncons": {
+      "totalTests": 1275,
+      "passedTests": 1260,
+      "failedTests": 15,
+      "scorePercentage": 98.82
+    },
+    "cpp-blaze": {
+      "totalTests": 1277,
+      "passedTests": 1262,
+      "failedTests": 15,
+      "scorePercentage": 98.83
+    },
+    "rust-boon": {
+      "totalTests": 1277,
+      "passedTests": 1267,
+      "failedTests": 10,
+      "scorePercentage": 99.22
+    },
+    "ts-vscode-json-languageservice": {
+      "totalTests": 1277,
+      "passedTests": 1169,
+      "failedTests": 108,
+      "scorePercentage": 91.54
+    },
+    "php-opis-json-schema": {
+      "totalTests": 1273,
+      "passedTests": 1179,
+      "failedTests": 94,
+      "scorePercentage": 92.62
+    },
+    "js-schemasafe": {
+      "totalTests": 1240,
+      "passedTests": 1237,
+      "failedTests": 3,
+      "scorePercentage": 99.76
+    },
+    "dotnet-jsonschema-net": {
+      "totalTests": 1275,
+      "passedTests": 1263,
+      "failedTests": 12,
+      "scorePercentage": 99.06
+    },
+    "python-jschon": {
+      "totalTests": 1275,
+      "passedTests": 1257,
+      "failedTests": 18,
+      "scorePercentage": 98.59
+    },
+    "python-jsu": {
+      "totalTests": 1277,
+      "passedTests": 1142,
+      "failedTests": 135,
+      "scorePercentage": 89.43
+    },
+    "js-ajv-plus": {
+      "totalTests": 1263,
+      "passedTests": 1220,
+      "failedTests": 43,
+      "scorePercentage": 96.6
+    },
+    "dotnet-newtonsoft-json-schema": {
+      "totalTests": 1273,
+      "passedTests": 1257,
+      "failedTests": 16,
+      "scorePercentage": 98.74
+    },
+    "java-sjf4j": {
+      "totalTests": 1277,
+      "passedTests": 1274,
+      "failedTests": 3,
+      "scorePercentage": 99.77
+    },
+    "js-ajv": {
+      "totalTests": 1064,
+      "passedTests": 1027,
+      "failedTests": 37,
+      "scorePercentage": 96.52
+    },
+    "js-hyperjump": {
+      "totalTests": 1277,
+      "passedTests": 1273,
+      "failedTests": 4,
+      "scorePercentage": 99.69
+    },
+    "kotlin-kmp-json-schema-validator": {
+      "totalTests": 1277,
+      "passedTests": 1277,
+      "failedTests": 0,
+      "scorePercentage": 100.0
+    },
+    "elixir-jsv": {
+      "totalTests": 1277,
+      "passedTests": 1267,
+      "failedTests": 10,
+      "scorePercentage": 99.22
+    },
+    "scala-mjs-validator": {
+      "totalTests": 1265,
+      "passedTests": 1255,
+      "failedTests": 10,
+      "scorePercentage": 99.21
+    },
+    "java-networknt-json-schema-validator": {
+      "totalTests": 1277,
+      "passedTests": 1272,
+      "failedTests": 5,
+      "scorePercentage": 99.61
+    },
+    "java-jsonschemafriend": {
+      "totalTests": 1277,
+      "passedTests": 1261,
+      "failedTests": 16,
+      "scorePercentage": 98.75
+    },
+    "java-openapiprocessor": {
+      "totalTests": 1277,
+      "passedTests": 1273,
+      "failedTests": 4,
+      "scorePercentage": 99.69
+    },
+    "java-json-schema-react": {
+      "totalTests": 1277,
+      "passedTests": 1270,
+      "failedTests": 7,
+      "scorePercentage": 99.45
+    },
+    "perl-json-schema-modern": {
+      "totalTests": 1277,
+      "passedTests": 1277,
+      "failedTests": 0,
+      "scorePercentage": 100.0
+    },
+    "scala-rc-circe-json-validator": {
+      "totalTests": 1271,
+      "passedTests": 1261,
+      "failedTests": 10,
+      "scorePercentage": 99.21
+    },
+    "java-json-schema": {
+      "totalTests": 1277,
+      "passedTests": 1269,
+      "failedTests": 8,
+      "scorePercentage": 99.37
+    },
+    "dotnet-corvus-jsonschema": {
+      "totalTests": 1277,
+      "passedTests": 1264,
+      "failedTests": 13,
+      "scorePercentage": 98.98
+    }
+  },
+  "metadata": {
+    "generated": "2026-03-09T15:32:14ZZ",
+    "testSuite": "bowtie",
+    "dialect": "2020-12",
+    "totalImplementations": 32
+  }
+}

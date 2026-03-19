@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "./mode-toggle";
-import { GithubIcon, LayoutDashboard, Database, ShieldCheck, FileCode } from "lucide-react";
+import { GithubIcon, LayoutDashboard, Database, ShieldCheck, FileCode, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navItems = [
@@ -12,6 +12,7 @@ const navItems = [
   { href: "/repo", label: "Repositories", icon: Database },
   { href: "/bowtie", label: "Compliance", icon: ShieldCheck },
   { href: "/drafts", label: "Drafts", icon: FileCode },
+  { href: "/insights", label: "Insights", icon: TrendingUp },
 ];
 
 export function Navigation() {

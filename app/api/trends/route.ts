@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 import path from "path";
 
 export async function GET() {
-  const snapshotsDir = path.join(process.cwd(), "snapshots");
+  const snapshotsDir = path.join(process.cwd(), "data/snapshots");
   if (!fs.existsSync(snapshotsDir)) {
      return NextResponse.json([]);
   }

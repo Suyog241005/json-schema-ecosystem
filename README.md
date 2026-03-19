@@ -1,31 +1,25 @@
 # JSON Schema Ecosystem Observability
 
-An automated dashboard providing visibility into the JSON Schema ecosystem through real-time metrics, historical trends, and implementation compliance analysis.
+An automated dashboard and data pipeline providing continuous visibility into the health, adoption, and evolution of the global JSON Schema landscape.
 
-> **Note**: This project is a qualification task for the [Google Summer of Code 2026](https://json-schema.org/blog/posts/gsoc-2026-call-for-proposals) project: *JSON Schema Ecosystem Observability*.
+> **GSoC 2026 Qualification Task**: Built for the [JSON Schema organization](https://json-schema.org/).
 
 ## 🚀 Quick Links
-
 - **Live Dashboard**: [json-schema-ecosystem.vercel.app](https://json-schema-ecosystem.vercel.app/)
 - **Part 1: Metric Analysis**: [`analysis.md`](./analysis.md)
 - **Part 2: Code Evaluation**: [`evaluation.md`](./evaluation.md)
 
-## ✨ Key Features
+## ✨ Strategic Capabilities
+- **Evolutionary Metrics (Velocity)**: Tracks the speed of spec adoption and implementation improvements over an 8-week rolling window.
+- **Maintenance Health**: Identifies stale vs. active projects using real-time GitHub activity signals.
+- **Compliance Tracking**: Visualizes Bowtie test results for 30+ implementations across multiple drafts.
+- **Community Momentum**: Measures contributor growth and maintainer responsiveness (PR/Issue turnaround).
+- **Automated Pipeline**: Fully hands-off weekly snapshots via GitHub Actions.
 
-- **Real-time Metrics**: Tracks npm weekly downloads for core libraries (`ajv`, `jsonschema`, etc.).
-- **Repo Explorer**: Analyzes 2,300+ GitHub repositories tagged with `json-schema`.
-- **Bowtie Insights**: Visualizes implementation compliance scores across the ecosystem.
-- **Draft Adoption**: Monitors the distribution of JSON Schema versions (Draft 7 vs. 2020-12).
-- **Automated Pipeline**: Weekly data snapshots via GitHub Actions.
-
-## 📊 Technical Architecture
-
-- **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind CSS, shadcn/ui.
-- **Visualization**: Chart.js for interactive time-series and distribution charts.
-- **Backend/Data**:
-  - **Snapshots**: Weekly JSON data stored in `/snapshots` for historical tracking.
-  - **In-repo Storage**: `latest-metrics.json` serves as the primary data source for the UI.
-  - **Automation**: GitHub Actions script (`.github/workflows/metrics.yml`) runs every Monday.
+## 📊 Technical Stack
+- **Frontend**: Next.js 15 (App Router), React 19, Chart.js, Tailwind CSS, Framer Motion.
+- **Backend**: Node.js/TypeScript fetchers with Octokit Throttling for resilient API integration.
+- **Data**: Git-native JSON storage in `/data` directory (No external DB required).
 
 ## 📁 Project Structure
 ```
@@ -37,6 +31,10 @@ json-schema-ecosystem/
 │   ├── repo/            # Repository explorer page
 │   └── globals.css      # Global styles
 │   └── page.tsx         # Metrics page
+├── data/                   # Unified metrics data
+│   ├── snapshots/          # Historical Phase 1 metrics
+│   ├── bowtie/             # Bowtie test results and scores
+│   └── insights/           # Detailed Phase 2 insights
 ├── components/             # React components
 │   ├── ui/              # shadcn/ui components
 │   ├── navigation.tsx    # Main navigation
@@ -50,42 +48,16 @@ json-schema-ecosystem/
 │   └── utils.ts          # Helper functions
 ├── scripts/                # Data collection scripts
 │   ├── metrics.ts        # Metrics collection
-│   └── bowtie-score.ts   # Bowtie processing
-├── bowtie/                 # Bowtie data files
-│   ├── bowtie-scores.json    # Processed scores
-│   └── bowtie-implementations.json # Raw data
-└── snapshots/              # Historical metrics
-    ├── latest-metrics.json   # Current metrics
-    └── metrics-output-*.json # Historical snapshots
+│   ├── bowtie-score.ts   # Bowtie processing
+│   ├── insights.ts       # Insights collection
+
 ```
 
 ## 🔧 Local Setup
-
-### Prerequisites
-- Node.js 18+
-- GitHub Token (Optional, for higher rate limits)
-
-### Installation
-
-1. **Clone & Install**
-   ```bash
-   git clone https://github.com/Suyog241005/json-schema-ecosystem.git
-   cd json-schema-ecosystem
-   npm install
-   ```
-
-2. **Run Scripts**
-   ```bash
-   npm run metrics  # Fetch latest ecosystem data
-   npm run bowtie   # Process compliance scores
-   ```
-
-3. **Development Server**
-   ```bash
-   npm run dev      # Start at http://localhost:3000
-   ```
+1. **Install**: `npm install`
+2. **Configure**: Add `GITHUB_TOKEN` to `.env` for full data collection.
+3. **Collect**: `npm run metrics:insights` (Generates latest observability signals).
+4. **Dev**: `npm run dev`
 
 ---
-
-*Briefly assisted by AI for document structuring and clarity. All core decisions and implementations are original.*
-
+*Authored by Suyog Habbu. Logic, architecture, and visualizations are original implementations based on ecosystem research.*

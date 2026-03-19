@@ -74,13 +74,16 @@ export function PremiumDraftsContent({ drafts }: { drafts: Draft[] }) {
                     contentStyle={{ 
                       backgroundColor: "var(--card)", 
                       border: "1px solid var(--border)",
-                      borderRadius: "16px" 
+                      borderRadius: "16px",
+                      color: "var(--foreground)"
                     }}
+                    itemStyle={{ color: "var(--foreground)" }}
+                    labelStyle={{ color: "var(--foreground)" }}
                   />
                   <Legend 
                      verticalAlign="bottom" 
                      height={36}
-                     formatter={(value) => <span className="text-xs font-bold uppercase tracking-wider">{value}</span>}
+                     formatter={(value) => <span className="text-xs font-bold uppercase tracking-wider text-foreground">{value}</span>}
                   />
                 </PieChart>
               </ResponsiveContainer>

@@ -1,36 +1,33 @@
 # JSON Schema PoC Evaluation
 
-Critical analysis of the initial [json-schema-org/ecosystem](https://github.com/json-schema-org/ecosystem) proof-of-concept.
+Technical assessment of the initial [json-schema-org/ecosystem](https://github.com/json-schema-org/ecosystem) proof-of-concept (PoC).
 
 ---
 
 ## 🔍 Code Audit
 
 ### Strengths
-- **Metric Quality**: Correctly identified high-value signals (creation dates, first commits, topics) for ecosystem lifecycle analysis.
-- **Data Persistence**: Used a reliable row-by-row CSV recorder to preserve progress during long-running API jobs.
-- **Resourcefulness**: Leveraged `gnuplot` for initial visualization, demonstrating a clear path from raw data to actionable charts.
+- **Metric Identification**: Correctly identified high-value signals (creation dates, first commits) for lifecycle analysis.
+- **Data Persistence**: Used row-by-row CSV recording to preserve progress during long-running API tasks.
 
-### Operational Limitations
-- **API Fragility**: The original script was highly sensitive to GitHub API limits and inconsistently handled repositories lacking specific history (e.g., those with no releases).
-- **Manual Pipeline**: The transformation from CSV to charts was highly manual, requiring significant shell-scripting knowledge and lacked a path to real-time automation.
-- **Tooling Constraints**: Reliance on `gnuplot` and `csvkit` made the visualization stage difficult to port to a modern, responsive web environment.
+### Limitations
+- **Manual Overhead**: The transformation from CSV to charts required significant manual effort and shell-scripting knowledge.
+- **Visualization Constraints**: Reliance on static `gnuplot` output made it difficult to integrate into a modern, responsive web environment.
+- **Scalability**: The script lacked a robust error-recovery mechanism for handling GitHub's 5000/hr rate limits during massive batch runs.
 
 ---
 
 ## 🚀 Transformation Rationale
 
 ### Why We Started Fresh
-While the core logic of the PoC was sound, we chose to **start fresh with a modern TypeScript/Next.js stack** to meet "production-grade" requirements:
+While the core logic of the PoC was sound, we chose to **re-architect with a modern TypeScript/Next.js stack** to ensure the project is a sustainable community platform rather than a one-off script:
 
-1. **Automation-First**: Moved from manual shell commands to a robust GitHub Actions cron service.
-2. **Standardization**: Transitioned from CSV to structured JSON snapshots for easy historical tracking and web integration.
-3. **Interactive UI**: Swapped static `gnuplot` images for a high-performance React dashboard using Recharts and Framer Motion.
-4. **Resilience**: Implemented proper Octokit pagination and robust error recovery to handle 2,400+ repositories without failure.
+1. **Automation-First**: Replaced manual execution with a robust **GitHub Actions cron service**.
+2. **Standardization**: Transitioned from CSV to **structured JSON snapshots** for seamless web integration and Git-native history.
+3. **Interactive UX**: Swapped static images for a **high-performance React dashboard** with dynamic filtering and inline Sparklines.
+4. **Resilience**: Implemented **Octokit Throttling** and typed interfaces to handle 30+ implementations with production-grade stability.
 
 ---
 
-## 🎯 Key Takeaways
-The PoC successfully validated that **repository lifecycle metrics** are an underexplored and valuable angle for JSON Schema. Our production implementation carries this philosophy forward while stripping away the operational debt of the original script.
-
-The result is a platform that is not just a one-off report, but a sustainable observability tool for the entire community.
+## 🎯 Final Recommendation
+The PoC successfully validated that lifecycle metrics are a critical angle for JSON Schema. Our implementation carries this philosophy forward into a **sustainable, automated observability platform** that is ready for community handoff and future expansion (Phase 3/4).

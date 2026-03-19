@@ -1,46 +1,34 @@
 # JSON Schema Ecosystem Analysis
 
-Comprehensive analysis of the observability signals collected from the global JSON Schema landscape.
+Analysis of the observability signals collected from the global JSON Schema landscape.
 
 ---
 
 ## 📈 Key Observability Signals
 
-### 1. npm Download Velocity
-| Package | Weekly Downloads (Latest) | Ecosystem Role |
-| :--- | :--- | :--- |
-| **Ajv** | ~218M | Dominant Validator |
-| **jsonschema** | ~4.6M | Python-style JS Validator |
-| **Hyperjump** | ~247K | Modern Draft (2020-12) Focus |
+### 1. npm Download Footprint
+Ajv’s **~218 million weekly downloads** demonstrate that JSON Schema is a critical, load-bearing specification for the modern internet (transitive in OpenAPI, Webpack, AWS SDKs, etc.).
 
-**Interpretation**: 
-Ajv’s **~218 million weekly downloads** represent a massive "passive adoption" footprint. Most developers use JSON Schema via Ajv as a transitive dependency in tools like OpenAPI, Webpack, or AWS SDKs. This demonstrates that JSON Schema is a critical, though often invisible, load-bearing specification for the modern internet.
+### 2. Adoption Velocity (Evolution)
+**Velocity** measures the speed at which implementations add support for new spec drafts (like 2020-12).
+- **Fast Adopters (>2% improvement/week)**: Signaling aggressive spec alignment.
+- **Legacy Stability**: Identification of projects that have plateaued on Draft-07, indicating where migration support is needed.
 
-### 2. GitHub Adoption Breadth
-**2,400+ repositories** self-identified with the `json-schema` topic.
-- This signal shows steady growth in the number of projects making JSON Schema a core part of their infrastructure.
-- The diversity of these projects (from FastAPI to Kubernetes tools) indicates strong cross-language utility.
+### 3. Maintenance & Community Health
+- **Ecosystem Health**: 2,400+ self-identified GitHub repos analyze maintenance status.
+- **Responsiveness**: Real-time tracking of maintainer turnaround for PRs/Issues across 30+ implementations.
+- **Momentum**: Unique monthly contributor growth indicates project vitality.
 
-### 3. Bowtie Compliance Health
-Analysis of **32 implementations** across 10+ programming languages shows a high standard of spec-correctness:
-- **100% Compliance**: 15 implementations (notably in Go, Rust, and Java).
-- **High Performance (95%+)**: 14 implementations.
-- **Needs Support**: 3 implementations showing legacy draft debt.
-
-### 4. Specification Maturity
-- **Draft 2020-12**: ~49.5% adoption.
-- **Draft-07**: ~24.5% adoption (legacy stable).
-- **Migration Trend**: The ecosystem is successfully migrating to modern drafts, though Draft-07 remains a significant legacy anchor.
+### 4. Language Diversity
+Mapping implementations across 15+ languages (Java, TypeScript, Rust, etc.) identifies gaps in spec-compliant tooling for specific developer communities.
 
 ---
 
-## ⚙️ Automation Strategy
+## ⚙️ Automation & Persistence
 
-The observability pipeline is fully automated via GitHub Actions (`.github/workflows/metrics.yml`).
-
-- **Frequency**: Every Monday at 00:00 UTC.
-- **Persistence**: Weekly snapshots are stored in `snapshots/latest-metrics.json`, creating a git-native historical record.
-- **Trigger**: Automated commits trigger a Vercel deployment, ensuring the dashboard is always current.
+The pipeline is fully automated via **GitHub Actions** (`weekly.yml`).
+- **Storage**: Weekly snapshots are stored as JSON in `data/insights/`, creating a Git-native historical record.
+- **Integrity**: Octokit Throttling ensures reliable collection across 30+ repositories without hitting API rate limits.
 
 ---
 
@@ -54,11 +42,10 @@ After community consultation (JSON Schema Slack), we settled on **self-identific
 
 ---
 
-## 🤖 Responsible AI Declaration
+## 🤖 AI Usage
 I utilized AI as a collaborative "pair programmer" for:
-- Improving the stylistic clarity of this analysis.
-- Structuring complex UI component logic for the dashboard.
-- Optimizing recursive GitHub API pagination.
+- Refatcoring the UI into a scalable component-based architecture.
+- Optimizing data processing logic for the "8-week rolling window" metric.
+- Improving the stylistic clarity of technical documentation.
 
-All architectural decisions, metric definitions, and logic flows were defined and verified by the developer to ensure production-grade accuracy.
- all code and decisions.
+All architectural decisions and logic flows were verified by the developer to ensure accuracy.

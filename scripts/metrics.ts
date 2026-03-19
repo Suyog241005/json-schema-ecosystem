@@ -139,17 +139,17 @@ export async function runMetrics() {
     };
 
 
-    const snapshotsDir = "snapshots";
+    const snapshotsDir = "data/snapshots";
     if (!existsSync(snapshotsDir)) {
       mkdirSync(snapshotsDir, { recursive: true });
     }
 
     writeFileSync(
-      `snapshots/metrics-output-${new Date().toISOString().split("T")[0]}.json`,
+      `${snapshotsDir}/metrics-output-${new Date().toISOString().split("T")[0]}.json`,
       JSON.stringify(output, null, 2),
     );
     writeFileSync(
-      "snapshots/latest-metrics.json",
+      `${snapshotsDir}/latest-metrics.json`,
       JSON.stringify(output, null, 2),
     );
     console.log("Success: Metrics collection completed and snapshots written.");
