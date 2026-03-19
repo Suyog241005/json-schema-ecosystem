@@ -26,7 +26,7 @@ An automated dashboard and data pipeline providing continuous visibility into th
 ## 🏗️ Technical Architecture
 
 - **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind CSS, shadcn/ui.
-- **Visualization**: Chart.js for interactive time-series and distribution charts.
+- **Visualization**: Recharts for interactive time-series and distribution charts.
 - **Infrastructure**: **Git-native JSON Data Store**. Metrics are unified in a version-controlled `/data` hierarchy for transparency and zero-cost persistence.
   - **Snapshots**: Weekly JSON data stored in `/snapshots` for historical tracking.
   - **Insights**: Weekly JSON data stored in `/insights` for historical tracking.

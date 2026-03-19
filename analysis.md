@@ -127,7 +127,7 @@ not just a curated list of implementations.
 ## AI Usage
 I used AI assistance to improve the clarity and structure of the written 
 explanations in this document. For the dashboard implementation, AI helped 
-with some TypeScript type definitions, Chart.js integration details, and 
+with some TypeScript type definitions, Recharts integration details, and 
 code suggestions. All metric choices, architectural decisions, API 
 integrations, and GitHub Actions automation were designed and tested by 
 me personally. I am confident in fully explaining all code and decisions.

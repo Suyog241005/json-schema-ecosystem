@@ -141,7 +141,7 @@ export function EcosystemOverview() {
           </div>
           <div className="h-[300px] w-full mt-4">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={chartData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+              <BarChart data={chartData} margin={{ top: 30, right: 30, left: 0, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
                 <XAxis 
                   dataKey="name" 
@@ -175,7 +175,7 @@ export function EcosystemOverview() {
                   cursor={{ fill: "rgba(255,255,255,0.02)" }}
                   formatter={(val: number) => [val.toLocaleString(), "Downloads"]}
                 />
-                <Bar dataKey="downloads" radius={[12, 12, 0, 0]} barSize={60}>
+                <Bar dataKey="downloads" radius={[12, 12, 12, 12]} barSize={60} label={{ position: "top" }}>
                   {chartData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />
                   ))}
