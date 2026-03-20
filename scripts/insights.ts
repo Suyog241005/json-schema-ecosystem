@@ -15,7 +15,8 @@ import {
   calculateReleaseFrequency,
   calculateContributorGrowth,
   getTestCoverageTrends,
-  calculateActivityHealth
+  calculateActivityHealth,
+  calculateEcosystemMaturity
 } from "../lib/insights.processor";
 import "dotenv/config";
 
@@ -92,6 +93,13 @@ async function main() {
     }
   }
 
+  const ecosystemMaturity = calculateEcosystemMaturity(
+    testCoverageTrends,
+    releaseFrequencies,
+    activityHealths,
+    contributorGrowths
+  );
+
   const insightsMetrics = {
     timestamp: now.toISOString(),
     languageDistribution,
@@ -99,6 +107,7 @@ async function main() {
     contributorGrowth: contributorGrowths,
     testCoverageTrends,
     activityHealth: activityHealths,
+    ecosystemMaturity,
   };
 
   const outputDir = "data/insights";

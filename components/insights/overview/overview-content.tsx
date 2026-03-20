@@ -18,13 +18,22 @@ export function OverviewContent({ data }: { data: EcosystemInsights }) {
     releaseFrequency, 
     contributorGrowth, 
     testCoverageTrends, 
-    activityHealth 
+    activityHealth,
+    ecosystemMaturity
   } = data;
 
   const activeProjects = releaseFrequency.filter((r: any) => r.status === "active").length;
   const growingProjects = contributorGrowth.filter((c: any) => c.status === "growing").length;
 
   const summaryCards = [
+    {
+      title: "Maturity Score",
+      value: `${ecosystemMaturity?.compositeScore || 0}/100`,
+      sub: `Rating: ${ecosystemMaturity?.healthRating || "N/A"}`,
+      icon: HeartPulse,
+      color: "text-purple-500",
+      href: "/insights" // Keep on overview for now
+    },
     {
       title: "Top Language",
       value: languageDistribution.topLanguage,
@@ -48,14 +57,6 @@ export function OverviewContent({ data }: { data: EcosystemInsights }) {
       icon: Users,
       color: "text-emerald-500",
       href: "/insights/community"
-    },
-    {
-      title: "Avg Response",
-      value: `${(activityHealth.reduce((acc: any, h: any) => acc + h.avgResponseTimeDays, 0) / activityHealth.length).toFixed(1)}d`,
-      sub: "Maintainer responsiveness",
-      icon: HeartPulse,
-      color: "text-rose-500",
-      href: "/insights/health"
     }
   ];
 
@@ -138,6 +139,63 @@ export function OverviewContent({ data }: { data: EcosystemInsights }) {
             </div>
           </CardContent>
         </Card>
+
+        <Card className="glass border-none lg:col-span-2">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold">Ecosystem Maturity Index Breakdown</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <DimensionItem 
+                label="Compliance Strength" 
+                score={ecosystemMaturity.dimensions.complianceStrength} 
+                weight="40%" 
+                description="Avg Bowtie test compliance"
+              />
+              <DimensionItem 
+                label="Activity Health" 
+                score={ecosystemMaturity.dimensions.activityHealth} 
+                weight="30%" 
+                description="Releases & responsiveness"
+              />
+              <DimensionItem 
+                label="Adoption Momentum" 
+                score={ecosystemMaturity.dimensions.adoptionMomentum} 
+                weight="20%" 
+                description="Contributor growth rate"
+              />
+              <DimensionItem 
+                label="Community Support" 
+                score={ecosystemMaturity.dimensions.communitySupport} 
+                weight="10%" 
+                description="Community feedback signals"
+              />
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+}
+
+function DimensionItem({ label, score, weight, description }: { label: string, score: number, weight: string, description: string }) {
+  return (
+    <div className="space-y-3">
+      <div className="flex justify-between items-end">
+        <div className="space-y-0.5">
+          <p className="text-[10px] font-black uppercase tracking-widest text-muted-foreground">{label}</p>
+          <p className="text-[9px] font-bold text-primary/60 italic">{description}</p>
+        </div>
+        <div className="text-right">
+          <span className="text-xl font-black">{score}%</span>
+          <span className="text-[8px] block font-black text-muted-foreground uppercase">{weight} Weight</span>
+        </div>
+      </div>
+      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+        <div 
+          className="h-full bg-primary transition-all duration-1000" 
+          style={{ width: `${score}%` }} 
+        />
       </div>
     </div>
   );

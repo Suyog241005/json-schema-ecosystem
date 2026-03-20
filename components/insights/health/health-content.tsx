@@ -19,6 +19,7 @@ export function HealthContent({ data }: { data: EcosystemInsights }) {
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-center">Open Issues</th>
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-center">Open PRs</th>
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-center">Avg Response</th>
+                <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-center">Community Signal</th>
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-right">Health</th>
               </tr>
             </thead>
@@ -39,6 +40,16 @@ export function HealthContent({ data }: { data: EcosystemInsights }) {
                       <span className="font-bold text-sm">{item.avgResponseTimeDays}d</span>
                       <span className="text-[10px] text-muted-foreground uppercase font-black">{item.responsiveness}</span>
                     </div>
+                  </td>
+                  <td className="p-6 text-center">
+                    <Badge variant="outline" className={cn(
+                      "font-black uppercase text-[9px] tracking-widest",
+                      item.communityFeedbackSignal === "positive" ? "text-emerald-500 border-emerald-500/20" :
+                      item.communityFeedbackSignal === "neutral" ? "text-amber-500 border-amber-500/20" :
+                      "text-rose-500 border-rose-500/20"
+                    )}>
+                      {item.communityFeedbackSignal.replace('_', ' ')}
+                    </Badge>
                   </td>
                   <td className="p-6 text-right">
                     <Badge variant="outline" className={cn(

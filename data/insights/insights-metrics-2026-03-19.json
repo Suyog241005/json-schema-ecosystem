@@ -79,7 +79,39 @@
       }
     ],
     "total": 30,
-    "topLanguage": "Java"
+    "topLanguage": "Java",
+    "gaps": [
+      {
+        "language": "Rust",
+        "issue": "low_implementations",
+        "severity": "medium",
+        "recommendation": "Encourage community to build or port more full-featured implementations in Rust."
+      },
+      {
+        "language": "C++",
+        "issue": "low_implementations",
+        "severity": "medium",
+        "recommendation": "Encourage community to build or port more full-featured implementations in C++."
+      },
+      {
+        "language": "JavaScript",
+        "issue": "low_implementations",
+        "severity": "medium",
+        "recommendation": "Encourage community to build or port more full-featured implementations in JavaScript."
+      },
+      {
+        "language": "PHP",
+        "issue": "low_implementations",
+        "severity": "high",
+        "recommendation": "Encourage community to build or port more full-featured implementations in PHP."
+      },
+      {
+        "language": "Scala",
+        "issue": "low_implementations",
+        "severity": "high",
+        "recommendation": "Encourage community to build or port more full-featured implementations in Scala."
+      }
+    ]
   },
   "releaseFrequency": [
     {
@@ -706,7 +738,8 @@
           "percentage": 99.92
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "php-opis-json-schema",
@@ -758,7 +791,8 @@
           "percentage": 93.79
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "rust-boon",
@@ -810,7 +844,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "cpp-jsoncons",
@@ -862,7 +897,8 @@
           "percentage": 99.92
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "java-networknt-json-schema-validator",
@@ -914,7 +950,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "scala-rc-circe-json-validator",
@@ -966,7 +1003,8 @@
           "percentage": 99.76
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "java-openapiprocessor",
@@ -1018,7 +1056,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "java-jsonschemafriend",
@@ -1070,7 +1109,8 @@
           "percentage": 99.22
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "java-sjf4j",
@@ -1122,7 +1162,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "rust-jsonschema",
@@ -1174,7 +1215,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "kotlin-kmp-json-schema-validator",
@@ -1226,7 +1268,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "cpp-blaze",
@@ -1278,7 +1321,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "go-jsonschema",
@@ -1330,7 +1374,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "java-json-schema",
@@ -1382,7 +1427,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "python-jschon",
@@ -1434,7 +1480,8 @@
           "percentage": 99.69
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "dotnet-newtonsoft-json-schema",
@@ -1486,7 +1533,8 @@
           "percentage": 99.61
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "dotnet-jsonschema-net",
@@ -1538,7 +1586,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "java-json-schema-react",
@@ -1590,7 +1639,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "js-schemasafe",
@@ -1642,7 +1692,8 @@
           "percentage": 99.6
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "dotnet-corvus-jsonschema",
@@ -1694,7 +1745,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "js-json-schema",
@@ -1746,7 +1798,8 @@
           "percentage": 96.23
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "js-ajv",
@@ -1798,7 +1851,8 @@
           "percentage": 96.71
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "js-ajv-plus",
@@ -1850,7 +1904,8 @@
           "percentage": 96.67
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "ts-vscode-json-languageservice",
@@ -1902,7 +1957,8 @@
           "percentage": 91.93
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "js-hyperjump",
@@ -1954,7 +2010,8 @@
           "percentage": 99.69
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "ruby-json_schemer",
@@ -2006,7 +2063,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "python-jsu",
@@ -2058,7 +2116,8 @@
           "percentage": 90.37
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "perl-json-schema-modern",
@@ -2110,7 +2169,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "swift-swift-json-schema",
@@ -2162,7 +2222,8 @@
           "percentage": 99.22
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     },
     {
       "implementation": "elixir-jsv",
@@ -2214,7 +2275,8 @@
           "percentage": 100
         }
       ],
-      "adoptionVelocity": "slow"
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
     }
   ],
   "activityHealth": [
@@ -2227,7 +2289,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 503,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "opis/json-schema",
@@ -2238,7 +2301,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 300,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "boon",
@@ -2249,7 +2313,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 221,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "jsoncons",
@@ -2260,7 +2325,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 273,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "networknt",
@@ -2271,7 +2337,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 144,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "rc-circe",
@@ -2282,7 +2349,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 513,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "openapi-processor",
@@ -2293,7 +2361,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 300,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "jsonschemafriend",
@@ -2304,7 +2373,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 405,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "sjf4j",
@@ -2315,7 +2385,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 27,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "jsonschema-rs",
@@ -2326,7 +2397,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 255,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "kmp-validator",
@@ -2337,7 +2409,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 199,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "blaze",
@@ -2348,7 +2421,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 146,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "jsonschema (Go)",
@@ -2359,7 +2433,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 189,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "dev.harrel.json-schema",
@@ -2370,7 +2445,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 103,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "jschon",
@@ -2381,7 +2457,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 0,
       "health": "active",
-      "responsiveness": "very-quick"
+      "responsiveness": "very-quick",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "Newtonsoft.Json.Schema",
@@ -2392,7 +2469,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 674,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "JsonSchema.Net",
@@ -2403,7 +2481,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 125,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "georgeakulov/json-schema",
@@ -2414,7 +2493,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 0,
       "health": "active",
-      "responsiveness": "very-quick"
+      "responsiveness": "very-quick",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "schemasafe",
@@ -2425,7 +2505,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 441,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "Corvus.JsonSchema",
@@ -2436,7 +2517,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 115,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "cfworker",
@@ -2447,7 +2529,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 571,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "ajv",
@@ -2458,7 +2541,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 258,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "ajv-plus",
@@ -2469,7 +2553,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 68,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "vscode-json-languageservice",
@@ -2480,7 +2565,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 357,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "hyperjump",
@@ -2491,7 +2577,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 228,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "json_schemer",
@@ -2502,7 +2589,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 166,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "jsu",
@@ -2513,7 +2601,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 0,
       "health": "active",
-      "responsiveness": "very-quick"
+      "responsiveness": "very-quick",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "JSON-Schema-Modern",
@@ -2524,7 +2613,8 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 523,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "swift-json-schema",
@@ -2535,7 +2625,8 @@
       "openIssuesTrend": "decreasing",
       "medianResolutionDays": 132,
       "health": "slow",
-      "responsiveness": "slow"
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "jsv",
@@ -2546,7 +2637,15 @@
       "openIssuesTrend": "stable",
       "medianResolutionDays": 0,
       "health": "active",
-      "responsiveness": "very-quick"
+      "responsiveness": "very-quick",
+      "communityFeedbackSignal": "neutral"
     }
-  ]
+  ],
+  "ecosystemMaturity": {
+    "coverageScore": 98.74,
+    "maintenanceScore": 30,
+    "communityScore": 13.33,
+    "compositeScore": 54.16,
+    "healthRating": "F"
+  }
 }

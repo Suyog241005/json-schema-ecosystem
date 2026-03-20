@@ -3,7 +3,8 @@ import {
   ReleaseFrequency,
   ContributorMetrics,
   TestCoverageTrend,
-  ActivityHealth
+  ActivityHealth,
+  EcosystemMaturity
 } from "./insights.types";
 import { calculatePercentage, calculateDateDifference } from "./utils";
 
@@ -29,10 +30,20 @@ export async function getLanguageDistribution(repos: any[]): Promise<LanguageDis
     }))
     .sort((a, b) => b.count - a.count);
 
+  const gaps = languages
+    .filter(l => l.count < 3 && l.name !== "Unknown")
+    .map(l => ({
+      language: l.name,
+      issue: "low_implementations" as const,
+      severity: l.count === 1 ? "high" : "medium" as "high" | "medium" | "low",
+      recommendation: `Encourage community to build or port more full-featured implementations in ${l.name}.`
+    })).slice(0, 5); // Limit to top 5 gaps
+
   return {
     languages,
     total,
-    topLanguage: languages[0]?.name || "N/A"
+    topLanguage: languages[0]?.name || "N/A",
+    gaps
   };
 }
 
@@ -148,6 +159,15 @@ export async function getTestCoverageTrends(
   if (changeFromLastWeek > 2) adoptionVelocity = "fast";
   else if (changeFromLastWeek < 0.5) adoptionVelocity = "slow";
 
+  // Milestones prediction
+  let projected100PercentDate: string | null = null;
+  if (currentPercentage < 100 && changeFromLastWeek > 0) {
+    const weeksTo100 = (100 - currentPercentage) / changeFromLastWeek;
+    const projectedDate = new Date();
+    projectedDate.setDate(projectedDate.getDate() + weeksTo100 * 7);
+    projected100PercentDate = projectedDate.toISOString().split('T')[0];
+  }
+
   return {
     implementation: implementationId,
     currentTestsPassed: currentScore?.passedTests || 0,
@@ -155,7 +175,8 @@ export async function getTestCoverageTrends(
     currentPercentage,
     changeFromLastWeek,
     trendLast8Weeks,
-    adoptionVelocity
+    adoptionVelocity,
+    projected100PercentDate
   };
 }
 
@@ -198,6 +219,11 @@ export async function calculateActivityHealth(
     else if (openIssues < previousSnapshotIssuesCount) openIssuesTrend = "decreasing";
   }
 
+  // Mock Community Feedback Signal based on PRs vs Issues ratio
+  let communityFeedbackSignal: "positive" | "neutral" | "needs_attention" = "neutral";
+  if (openPRs > openIssues * 0.5) communityFeedbackSignal = "positive";
+  else if (openIssues > 50 && openPRs < 5) communityFeedbackSignal = "needs_attention";
+
   return {
     implementation: implementationName,
     openIssues,
@@ -207,6 +233,67 @@ export async function calculateActivityHealth(
     openIssuesTrend,
     medianResolutionDays: Math.floor(avgResponseTimeDays * 1.5),
     health,
-    responsiveness
+    responsiveness,
+    communityFeedbackSignal
+  };
+}
+
+/**
+ * METRIC 6: ECOSYSTEM MATURITY INDEX
+ */
+export function calculateEcosystemMaturity(
+  testCoverageTrends: TestCoverageTrend[],
+  releaseFrequency: ReleaseFrequency[],
+  activityHealth: ActivityHealth[],
+  contributorGrowth: ContributorMetrics[]
+): EcosystemMaturity {
+  // 1. Compliance Strength (40% weight) - Bowtie compliance average
+  const avgCoverage = testCoverageTrends.length > 0
+    ? testCoverageTrends.reduce((acc, t) => acc + t.currentPercentage, 0) / testCoverageTrends.length
+    : 0;
+  const complianceStrength = Math.min(100, avgCoverage);
+
+  // 2. Activity Health (30% weight) - Response time + Release frequency
+  const activeProjects = releaseFrequency.filter(r => r.status === "active").length;
+  const maintenanceRatio = releaseFrequency.length > 0 ? (activeProjects / releaseFrequency.length) * 100 : 0;
+  const quickResponses = activityHealth.filter(a => a.responsiveness === "very-quick" || a.responsiveness === "quick").length;
+  const responseRatio = activityHealth.length > 0 ? (quickResponses / activityHealth.length) * 100 : 0;
+  const activityHealthScore = (maintenanceRatio * 0.5) + (responseRatio * 0.5);
+
+  // 3. Adoption Momentum (20% weight) - Growth rate and expansion
+  const growingProjects = contributorGrowth.filter(c => c.status === "growing").length;
+  const adoptionMomentum = contributorGrowth.length > 0 
+    ? (growingProjects / contributorGrowth.length) * 100 
+    : 0;
+
+  // 4. Community Support (10% weight) - Maintainer engagement signals
+  const positiveSignals = activityHealth.filter(a => a.communityFeedbackSignal === "positive").length;
+  const communitySupport = activityHealth.length > 0
+    ? (positiveSignals / activityHealth.length) * 100
+    : 0;
+
+  const compositeScore = Math.round(
+    (complianceStrength * 0.4) + 
+    (activityHealthScore * 0.3) + 
+    (adoptionMomentum * 0.2) + 
+    (communitySupport * 0.1)
+  );
+
+  let healthRating: "A" | "B" | "C" | "D" | "F" = "C";
+  if (compositeScore >= 90) healthRating = "A";
+  else if (compositeScore >= 80) healthRating = "B";
+  else if (compositeScore >= 70) healthRating = "C";
+  else if (compositeScore >= 60) healthRating = "D";
+  else healthRating = "F";
+
+  return {
+    compositeScore,
+    healthRating,
+    dimensions: {
+      complianceStrength: Math.round(complianceStrength),
+      activityHealth: Math.round(activityHealthScore),
+      adoptionMomentum: Math.round(adoptionMomentum),
+      communitySupport: Math.round(communitySupport)
+    }
   };
 }

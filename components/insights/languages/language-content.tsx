@@ -32,7 +32,7 @@ export function LanguageContent({ data }: { data: EcosystemInsights }) {
     }));
   }, [data]);
 
-  const { languages } = data.languageDistribution;
+  const { languages, gaps } = data.languageDistribution;
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500">
@@ -44,8 +44,8 @@ export function LanguageContent({ data }: { data: EcosystemInsights }) {
               layout="vertical"
               margin={{ top: 5, right: 30, left: 40, bottom: 5 }}
             >
-              <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={true} stroke="var(--border)" />
-              <XAxis type="number"  />
+              <CartesianGrid strokeDasharray="3 3" horizontal={true} vertical={false} stroke="var(--border)" />
+              <XAxis type="number" hide />
               <YAxis 
                 dataKey="name" 
                 type="category" 
@@ -75,7 +75,31 @@ export function LanguageContent({ data }: { data: EcosystemInsights }) {
         </div>
       </Card>
 
+      {gaps && gaps.length > 0 && (
+        <Card className="glass border-rose-500/20 bg-rose-500/5">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold text-rose-500">Language Ecosystem Gaps & Priorities</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              {gaps.map((gap, i) => (
+                <div key={i} className="flex flex-col md:flex-row md:items-center justify-between p-4 rounded-xl bg-background/50 border border-white/5 gap-4">
+                  <div>
+                    <h4 className="font-bold text-lg">{gap.language}</h4>
+                    <p className="text-sm text-muted-foreground">{gap.recommendation}</p>
+                  </div>
+                  <Badge variant="outline" className={`shrink-0 uppercase tracking-widest text-[10px] font-black ${gap.severity === 'high' ? 'border-rose-500/50 text-rose-500' : 'border-amber-500/50 text-amber-500'}`}>
+                    {gap.severity} Priority
+                  </Badge>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       <Card className="glass border-none">
+
         <CardHeader>
           <CardTitle className="text-xl font-bold">Detailed Language Breakdown</CardTitle>
         </CardHeader>

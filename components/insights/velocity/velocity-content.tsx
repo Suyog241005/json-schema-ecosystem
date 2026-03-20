@@ -27,6 +27,7 @@ export function VelocityContent({ data }: { data: EcosystemInsights }) {
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground">Implementation</th>
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-center">Coverage</th>
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-center">WoW Change</th>
+                <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-center">Est. 100%</th>
                 <th className="p-6 font-black uppercase text-[10px] tracking-widest text-muted-foreground text-right">Velocity</th>
               </tr>
             </thead>
@@ -48,6 +49,9 @@ export function VelocityContent({ data }: { data: EcosystemInsights }) {
                       )}>
                         {p.changeFromLastWeek > 0 ? "+" : ""}{p.changeFromLastWeek}%
                       </span>
+                    </td>
+                    <td className="p-6 text-center text-sm font-mono text-muted-foreground">
+                      {p.projected100PercentDate ? new Date(p.projected100PercentDate).toLocaleDateString() : (p.currentPercentage === 100 ? "Achieved" : "N/A")}
                     </td>
                     <td className="p-6 text-right">
                       <Badge variant="outline" className={cn(
