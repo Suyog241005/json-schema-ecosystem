@@ -78,5 +78,32 @@
       "name": "Swift",
       "count": 1
     }
+  ],
+  "drafts": [
+    {
+      "draft": "draft-05",
+      "count": 988,
+      "url": "https://json-schema.org/draft-04/schema"
+    },
+    {
+      "draft": "draft-06",
+      "count": 354,
+      "url": "https://json-schema.org/draft-06/schema"
+    },
+    {
+      "draft": "draft-07",
+      "count": 4200,
+      "url": "https://json-schema.org/draft-07/schema"
+    },
+    {
+      "draft": "2019-09",
+      "count": 2272,
+      "url": "https://json-schema.org/draft/2019-09/schema"
+    },
+    {
+      "draft": "2020-12",
+      "count": 8432,
+      "url": "https://json-schema.org/draft/2020-12/schema"
+    }
   ]
 }

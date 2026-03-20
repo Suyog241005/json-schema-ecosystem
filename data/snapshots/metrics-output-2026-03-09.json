@@ -12,5 +12,95 @@
     "package": "jsonschema",
     "weeklyDownloads": 5650493
   },
-  "githubRepoCount": 2400
+  "githubRepoCount": 2400,
+  "githubHealth": {
+    "active": 73,
+    "stale": 27,
+    "healthPercentage": "73.0"
+  },
+  "languages": [
+    {
+      "name": "TypeScript",
+      "count": 32
+    },
+    {
+      "name": "Python",
+      "count": 23
+    },
+    {
+      "name": "JavaScript",
+      "count": 15
+    },
+    {
+      "name": "Go",
+      "count": 9
+    },
+    {
+      "name": "Java",
+      "count": 5
+    },
+    {
+      "name": "C++",
+      "count": 3
+    },
+    {
+      "name": "Clojure",
+      "count": 3
+    },
+    {
+      "name": "PHP",
+      "count": 3
+    },
+    {
+      "name": "Ruby",
+      "count": 2
+    },
+    {
+      "name": "Other",
+      "count": 1
+    },
+    {
+      "name": "Rust",
+      "count": 1
+    },
+    {
+      "name": "C#",
+      "count": 1
+    },
+    {
+      "name": "Vue",
+      "count": 1
+    },
+    {
+      "name": "Swift",
+      "count": 1
+    }
+  ],
+  "drafts": [
+    {
+      "draft": "draft-05",
+      "count": 988,
+      "url": "https://json-schema.org/draft-04/schema"
+    },
+    {
+      "draft": "draft-06",
+      "count": 354,
+      "url": "https://json-schema.org/draft-06/schema"
+    },
+    {
+      "draft": "draft-07",
+      "count": 4200,
+      "url": "https://json-schema.org/draft-07/schema"
+    },
+    {
+      "draft": "2019-09",
+      "count": 2272,
+      "url": "https://json-schema.org/draft/2019-09/schema"
+    },
+    {
+      "draft": "2020-12",
+      "count": 8432,
+      "url": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
 }

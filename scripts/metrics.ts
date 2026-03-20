@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, writeFileSync, readdirSync, readFileSync } from "fs";
 import axios from "axios";
+import { getDraftAdoption } from "../lib/octokit";
 
 interface NpmDownloadsResponse {
   downloads: number;
@@ -31,6 +32,11 @@ export interface MetricsOutput {
     stale: number;
     healthPercentage: string;
   };
+  drafts?: Array<{
+    draft: string;
+    count: number;
+    url: string;
+  }>;
 }
 
 async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
@@ -102,12 +108,14 @@ export async function runMetrics() {
       ajvDownloads,
       hyperjumpDownloads,
       jsonschemaDownloads,
-      github
+      github,
+      draftData
     ] = await Promise.all([
       getNpmWeeklyDownloads("ajv"),
       getNpmWeeklyDownloads("@hyperjump/json-schema"),
       getNpmWeeklyDownloads("jsonschema"),
       getDetailedGithubMetrics(),
+      getDraftAdoption()
     ]);
 
     const totalDownloads = ajvDownloads + hyperjumpDownloads + jsonschemaDownloads;
@@ -135,7 +143,8 @@ export async function runMetrics() {
         stale: github.stale,
         healthPercentage: github.healthPercentage
       },
-      languages: github.languages
+      languages: github.languages,
+      drafts: draftData || []
     };
 
 
