@@ -1,9 +1,37 @@
 import { Octokit } from "octokit";
 import { Endpoints } from "@octokit/types";
 import { drafts } from "@/lib/constants";
+import { throttling } from "@octokit/plugin-throttling";
+import "dotenv/config";
 
-export const octokit = new Octokit({
+/**
+ * Configure a custom Octokit instance with the throttling plugin.
+ * This is essential for managing GitHub's secondary rate limits,
+ * especially when performing automated searches.
+ */
+const MyOctokit = Octokit.plugin(throttling);
+
+export const octokit = new MyOctokit({
   auth: process.env.GITHUB_TOKEN,
+  throttle: {
+    onRateLimit: (retryAfter: number, options: any, octokit: any, retryCount: number) => {
+      octokit.log.warn(
+        `Request quota exhausted for request ${options.method} ${options.url}`,
+      );
+
+      if (retryCount < 2) {
+        octokit.log.info(`Retrying after ${retryAfter} seconds!`);
+        return true;
+      }
+    },
+    onSecondaryRateLimit: (retryAfter: number, options: any, octokit: any) => {
+      octokit.log.warn(
+        `SecondaryRateLimit detected for request ${options.method} ${options.url}`,
+      );
+      // Retry for secondary rate limits as well
+      return true;
+    },
+  },
 });
 
 export type SearchRepositoriesResponse =
@@ -75,21 +103,34 @@ export async function paginatedRepos({
   }
 }
 
+/**
+ * Fetches the adoption count for each JSON Schema draft.
+ * Uses sequential requests with a 5-second delay to avoid triggering 
+ * GitHub's secondary rate limits for code search. 
+ * Note: Code search is much more restrictive than repository search.
+ */
 export async function getDraftAdoption() {
   try {
-    const results = await Promise.all(
-      drafts.map(async (draft) => {
-        const response = await octokit.request("GET /search/code", {
-          q: draft.query,
-          per_page: 1,
-        });
-        return {
-          draft: draft.name,
-          count: response.data.total_count,
-          url: draft.query,
-        };
-      }),
-    );
+    const results = [];
+    
+    for (const draft of drafts) {
+      // Add a 5-second delay between search requests to stay within conservative anti-abuse limits
+      if (results.length > 0) {
+        await new Promise(resolve => setTimeout(resolve, 5000));
+      }
+
+      const response = await octokit.request("GET /search/code", {
+        q: draft.query,
+        per_page: 1,
+      });
+
+      results.push({
+        draft: draft.name,
+        count: response.data.total_count,
+        url: draft.query,
+      });
+    }
+
     return results;
   } catch (error) {
     console.error("Failed to fetch draft adoption", error);

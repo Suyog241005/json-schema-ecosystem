@@ -50,19 +50,19 @@ async function getNpmWeeklyDownloads(pkg: string): Promise<number> {
   }
 }
 
+import { octokit } from "../lib/octokit";
+
 async function getDetailedGithubMetrics() {
   try {
-    // Fetch top 100 repos (most stars) to analyze health as a sample
-    // In a real prod environment, we might paginate to 1000, but 100 is a good representative sample for "Quick Wins"
-    const response = await axios.get(
-      "https://api.github.com/search/repositories?q=topic:json-schema&sort=stars&per_page=100",
-      {
-        headers: {
-          "Accept": "application/vnd.github.v3+json",
-          "Authorization": process.env.GITHUB_TOKEN ? `token ${process.env.GITHUB_TOKEN}` : undefined
-        }
-      }
-    );
+    // Use the throttled octokit instance instead of axios to respect rate limits
+    const response = await octokit.request("GET /search/repositories", {
+      q: "topic:json-schema",
+      sort: "stars",
+      per_page: 100,
+      headers: {
+        "X-GitHub-Api-Version": "2022-11-28",
+      },
+    });
 
     const repos = response.data.items;
     const totalCount = response.data.total_count;
@@ -104,19 +104,27 @@ async function getDetailedGithubMetrics() {
 
 export async function runMetrics() {
   try {
+    // Step 1: Fetch npm downloads concurrently (npm API is less restrictive)
     const [
       ajvDownloads,
       hyperjumpDownloads,
       jsonschemaDownloads,
-      github,
-      draftData
     ] = await Promise.all([
       getNpmWeeklyDownloads("ajv"),
       getNpmWeeklyDownloads("@hyperjump/json-schema"),
       getNpmWeeklyDownloads("jsonschema"),
-      getDetailedGithubMetrics(),
-      getDraftAdoption()
     ]);
+
+    // Step 2: Fetch GitHub metrics sequentially to avoid secondary rate limits
+    // Repository search first
+    const github = await getDetailedGithubMetrics();
+    
+    // Add a small breather between repo search and code search
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    
+    // Code search for drafts second (this function has internal delays)
+    const draftData = await getDraftAdoption();
+
 
     const totalDownloads = ajvDownloads + hyperjumpDownloads + jsonschemaDownloads;
 

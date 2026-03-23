@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-03-23T01:57:53.199Z",
+  "timestamp": "2026-03-23T08:02:07.600Z",
   "ajv": {
     "package": "ajv",
-    "weeklyDownloads": 131951101,
+    "weeklyDownloads": 134892093,
     "marketShare": "98.0%"
   },
   "hyperjump": {
     "package": "@hyperjump/json-schema",
-    "weeklyDownloads": 111397,
+    "weeklyDownloads": 107272,
     "marketShare": "0.1%"
   },
   "jsonschema": {
     "package": "jsonschema",
-    "weeklyDownloads": 2536514,
+    "weeklyDownloads": 2602455,
     "marketShare": "1.9%"
   },
-  "githubRepoCount": 2474,
+  "githubRepoCount": 2473,
   "githubHealth": {
     "active": 73,
     "stale": 27,
@@ -79,5 +79,31 @@
       "count": 1
     }
   ],
-  "drafts": []
+  "drafts": [
+    {
+      "draft": "draft-05",
+      "count": 964,
+      "url": "https://json-schema.org/draft-04/schema"
+    },
+    {
+      "draft": "draft-06",
+      "count": 370,
+      "url": "https://json-schema.org/draft-06/schema"
+    },
+    {
+      "draft": "draft-07",
+      "count": 3896,
+      "url": "https://json-schema.org/draft-07/schema"
+    },
+    {
+      "draft": "2019-09",
+      "count": 2416,
+      "url": "https://json-schema.org/draft/2019-09/schema"
+    },
+    {
+      "draft": "2020-12",
+      "count": 6472,
+      "url": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ]
 }
