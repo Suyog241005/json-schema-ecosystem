@@ -32,7 +32,7 @@ export interface MetricsOutput {
     stale: number;
     healthPercentage: string;
   };
-  drafts?: Array<{
+  drafts: Array<{
     draft: string;
     count: number;
     url: string;
@@ -144,7 +144,7 @@ export async function runMetrics() {
         healthPercentage: github.healthPercentage
       },
       languages: github.languages,
-      drafts: draftData || []
+      drafts: draftData
     };
 
 
