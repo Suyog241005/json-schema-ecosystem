@@ -61,14 +61,21 @@ An automated dashboard and data pipeline providing continuous visibility into th
 
 ## 🔧 Local Setup
 
-1. **Install**:
+1. **Clone**:
+
+```bash
+git clone https://github.com/Suyog241005/json-schema-ecosystem.git
+```
+
+2. **Install**:
 
 ```bash
 npm install
 ```
 
-2. **Configure**: Add `GITHUB_TOKEN` to `.env` for full data collection.
-3. **Dev**:
+3. **Configure**: Add `GITHUB_TOKEN` to `.env` for full data collection (optional).
+
+4. **Dev**:
 
 ```bash
 npm run dev
