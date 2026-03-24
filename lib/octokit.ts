@@ -13,25 +13,6 @@ const MyOctokit = Octokit.plugin(throttling);
 
 export const octokit = new MyOctokit({
   auth: process.env.GITHUB_TOKEN,
-  throttle: {
-    onRateLimit: (retryAfter: number, options: any, octokit: any, retryCount: number) => {
-      octokit.log.warn(
-        `Request quota exhausted for request ${options.method} ${options.url}`,
-      );
-
-      if (retryCount < 2) {
-        octokit.log.info(`Retrying after ${retryAfter} seconds!`);
-        return true;
-      }
-    },
-    onSecondaryRateLimit: (retryAfter: number, options: any, octokit: any) => {
-      octokit.log.warn(
-        `SecondaryRateLimit detected for request ${options.method} ${options.url}`,
-      );
-      // Retry for secondary rate limits as well
-      return true;
-    },
-  },
 });
 
 export type SearchRepositoriesResponse =

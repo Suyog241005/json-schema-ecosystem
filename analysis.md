@@ -30,6 +30,14 @@ The Bowtie test results show compliance across 32 JSON Schema implementations. T
 
 JSON Schema draft adoption — tracking GitHub references to each draft version (draft-05 through 2020-12) shows that 2020-12 leads at 49.5% (7,080 refs), with draft-07 still widely used at 24.5% (3,504 refs). This signals healthy but gradual migration to newer drafts.
 
+### Language Ecosystem Distribution
+
+Grouping implementations by programming language reveals the ecosystem's accessibility. **JavaScript (37.5%)** and **Python (25%)** lead, followed by **Go**, **Java**, and **Rust**. A diverse language distribution means developers can find native JSON Schema support regardless of their stack, lowering the barrier to entry for the specification.
+
+### Repository Health Signals
+
+These metrics separate active projects from those suffering from "bit rot." By tracking release frequency and contributor growth, we categorize implementations as **Active**, **Moderate**, or **Stale**. High contributor growth in projects indicates a healthy pipeline of new features and security patches, which is critical for long-term ecosystem sustainability.
+
 ---
 
 ## How would you automate this to run weekly?
@@ -90,7 +98,7 @@ This approach:
 - Supports manual runs via `workflow_dispatch` for testing
 
 Over time, the weekly commits create a historical record in git (via commit history and diffs) that can be used to analyze trends in downloads and repo counts.
-The current implementation already writes dated snapshot files `(snapshots/metrics-YYYY-MM-DD.json)` each week, creating a queryable historical record.
+The current implementation already writes dated snapshot files `(snapshots/metrics-YYYY-MM-DD.json)` each week, creating a queryable historical record. To ensure reliability against GitHub's aggressive API limits, the automation uses a centralized, throttled `Octokit` client that automatically handles retries and backoffs.
 
 ---
 
@@ -125,9 +133,10 @@ as a starting point — the goal is an observable picture of the full ecosystem,
 not just a curated list of implementations.
 
 ## AI Usage
-I used AI assistance to improve the clarity and structure of the written 
-explanations in this document. For the dashboard implementation, AI helped 
-with some TypeScript type definitions, Recharts integration details, and 
-code suggestions. All metric choices, architectural decisions, API 
-integrations, and GitHub Actions automation were designed and tested by 
+
+I used AI assistance to improve the clarity and structure of the written
+explanations in this document. For the dashboard implementation, AI helped
+with some TypeScript type definitions, Recharts integration details, and
+code suggestions. All metric choices, architectural decisions, API
+integrations, and GitHub Actions automation were designed and tested by
 me personally. I am confident in fully explaining all code and decisions.
