@@ -26,6 +26,8 @@ The gap between ajv and the other validators also tells us something: the ecosys
 
 The Bowtie test results show compliance across 32 JSON Schema implementations. This provides a measure of ecosystem health — how consistently different implementations interpret the specification. 15 implementations achieve perfect scores (100% compliance), 14 are high performers (95–99%), and 3 need improvement (<95%). The dominance of Go and Rust implementations at the top suggests these communities have invested heavily in spec-correctness. Tracking this over time can reveal whether implementations are improving, stagnating, or being abandoned.
 
+---
+
 ## JSON Schema Draft Adoption
 
 JSON Schema draft adoption — tracking GitHub references to each draft version (draft-05 through 2020-12) shows that 2020-12 leads at 49.5% (7,080 refs), with draft-07 still widely used at 24.5% (3,504 refs). This signals healthy but gradual migration to newer drafts.
@@ -131,6 +133,8 @@ After Ben Hutton (project mentor) clarified the project's intent in Slack, the a
 The key insight is that for ecosystem observability, broad inclusion is valuable
 as a starting point — the goal is an observable picture of the full ecosystem,
 not just a curated list of implementations.
+
+---
 
 ## AI Usage
 

@@ -70,6 +70,8 @@ The proof-of-creation validates the core idea and identifies genuinely useful ec
 - The idea of **incremental persistence** — writing results as they complete to handle long runs safely.
 - The overall goal of producing a dataset suitable for visualizing **ecosystem growth over time**.
 
+---
+
 ## AI Usage
 
 I used AI assistance to improve the clarity and phrasing of this written
