@@ -2,26 +2,83 @@
   "timestamp": "2026-03-30T02:07:16.950Z",
   "ajv": {
     "package": "ajv",
-    "weeklyDownloads": 272281769,
+    "weeklyDownloads": 268818128,
     "marketShare": "97.8%"
   },
   "hyperjump": {
     "package": "@hyperjump/json-schema",
-    "weeklyDownloads": 163942,
+    "weeklyDownloads": 162596,
     "marketShare": "0.1%"
   },
   "jsonschema": {
     "package": "jsonschema",
-    "weeklyDownloads": 5836165,
+    "weeklyDownloads": 5873344,
     "marketShare": "2.1%"
   },
-  "githubRepoCount": 0,
+  "githubRepoCount": 2504,
   "githubHealth": {
-    "active": 0,
-    "stale": 0,
-    "healthPercentage": "NaN"
+    "active": 72,
+    "stale": 28,
+    "healthPercentage": "72.0"
   },
-  "languages": [],
+  "languages": [
+    {
+      "name": "TypeScript",
+      "count": 32
+    },
+    {
+      "name": "Python",
+      "count": 23
+    },
+    {
+      "name": "JavaScript",
+      "count": 15
+    },
+    {
+      "name": "Go",
+      "count": 9
+    },
+    {
+      "name": "Java",
+      "count": 5
+    },
+    {
+      "name": "C++",
+      "count": 3
+    },
+    {
+      "name": "Clojure",
+      "count": 3
+    },
+    {
+      "name": "PHP",
+      "count": 3
+    },
+    {
+      "name": "Ruby",
+      "count": 2
+    },
+    {
+      "name": "Other",
+      "count": 1
+    },
+    {
+      "name": "Rust",
+      "count": 1
+    },
+    {
+      "name": "C#",
+      "count": 1
+    },
+    {
+      "name": "Vue",
+      "count": 1
+    },
+    {
+      "name": "Swift",
+      "count": 1
+    }
+  ],
   "drafts": [
     {
       "draft": "draft-05",
@@ -35,17 +92,17 @@
     },
     {
       "draft": "draft-07",
-      "count": 3048,
+      "count": 3064,
       "url": "https://json-schema.org/draft-07/schema"
     },
     {
       "draft": "2019-09",
-      "count": 2904,
+      "count": 2864,
       "url": "https://json-schema.org/draft/2019-09/schema"
     },
     {
       "draft": "2020-12",
-      "count": 8944,
+      "count": 8552,
       "url": "https://json-schema.org/draft/2020-12/schema"
     }
   ]
