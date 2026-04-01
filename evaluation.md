@@ -41,9 +41,9 @@ const dir = path.dirname(this.fileName);
 if (dir) fs.mkdirSync(dir, { recursive: true });
 ```
 
-I opened an [issue](https://github.com/json-schema-org/ecosystem/issues/18) and submitted a [PR](https://github.com/json-schema-org/ecosystem/pull/19) with this fix. This kind of missing setup step is a sign the project was never tested on a clean environment after initial development.
+I opened an [issue](https://github.com/json-schema-org/ecosystem/issues/18) and submitted a [PR](https://github.com/json-schema-org/ecosystem/pull/19) with this fix.
 
-After creating the directory (`mkdir -p data`), I was able to run the script successfully. It processed multiple repositories and produced a timestamped CSV file under `./data/initialTopicRepoData-<timestamp>.csv`.
+After creating the directory (`mkdir data`), I was able to run the script successfully. It processed multiple repositories and produced a timestamped CSV file under `./data/initialTopicRepoData-<timestamp>.csv`.
 
 I also followed the README’s `csvkit` + `gnuplot` steps and produced a cumulative time-series plot. The chart represents the cumulative count of topic-tagged repositories over time (x-axis = repo creation date, y-axis = cumulative number of repos).
 
