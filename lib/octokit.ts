@@ -4,11 +4,6 @@ import { drafts } from "@/lib/constants";
 import { throttling } from "@octokit/plugin-throttling";
 import "dotenv/config";
 
-/**
- * Configure a custom Octokit instance with the throttling plugin.
- * This is essential for managing GitHub's secondary rate limits,
- * especially when performing automated searches.
- */
 const MyOctokit = Octokit.plugin(throttling);
 
 export const octokit = new MyOctokit({
@@ -63,7 +58,6 @@ export async function paginatedRepos({
         "X-GitHub-Api-Version": "2022-11-28",
       },
     });
-
 
     const totalCount = response.data.total_count;
 
