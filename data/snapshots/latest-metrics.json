@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-10-05T03:49:06.610Z",
+  "timestamp": "2026-10-12T04:04:30.908Z",
   "ajv": {
     "package": "ajv",
-    "weeklyDownloads": 471426751,
+    "weeklyDownloads": 393484506,
     "marketShare": "98.4%"
   },
   "hyperjump": {
     "package": "@hyperjump/json-schema",
-    "weeklyDownloads": 460193,
+    "weeklyDownloads": 382018,
     "marketShare": "0.1%"
   },
   "jsonschema": {
     "package": "jsonschema",
-    "weeklyDownloads": 7353285,
+    "weeklyDownloads": 5977032,
     "marketShare": "1.5%"
   },
-  "githubRepoCount": 4404,
+  "githubRepoCount": 4523,
   "githubHealth": {
     "active": 70,
     "stale": 30,
@@ -32,7 +32,7 @@
     },
     {
       "name": "JavaScript",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Go",
@@ -47,12 +47,12 @@
       "count": 3
     },
     {
-      "name": "Clojure",
+      "name": "PHP",
       "count": 3
     },
     {
-      "name": "PHP",
-      "count": 3
+      "name": "Clojure",
+      "count": 2
     },
     {
       "name": "Ruby",
