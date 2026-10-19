@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-12T04:04:38.778Z",
+  "timestamp": "2026-10-19T03:02:06.442Z",
   "languageDistribution": {
     "languages": [
       {
@@ -120,7 +120,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 5.67,
       "lastReleaseDate": "2026-01-07T13:41:11Z",
-      "daysSinceLastRelease": 278,
+      "daysSinceLastRelease": 285,
       "status": "stale",
       "trend": "flat"
     },
@@ -130,7 +130,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 1.5,
       "lastReleaseDate": "2025-10-17T12:48:19Z",
-      "daysSinceLastRelease": 360,
+      "daysSinceLastRelease": 367,
       "status": "stale",
       "trend": "flat"
     },
@@ -140,7 +140,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 0.17,
       "lastReleaseDate": "2025-01-07T16:28:53Z",
-      "daysSinceLastRelease": 643,
+      "daysSinceLastRelease": 650,
       "status": "stale",
       "trend": "flat"
     },
@@ -150,7 +150,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 8.33,
       "lastReleaseDate": "2026-10-05T17:54:16Z",
-      "daysSinceLastRelease": 7,
+      "daysSinceLastRelease": 14,
       "status": "active",
       "trend": "up"
     },
@@ -160,7 +160,7 @@
       "releasesLastMonth": 3,
       "avgReleasesPerMonth": 8.33,
       "lastReleaseDate": "2026-10-02T02:56:11Z",
-      "daysSinceLastRelease": 11,
+      "daysSinceLastRelease": 18,
       "status": "active",
       "trend": "flat"
     },
@@ -170,7 +170,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 0.25,
       "lastReleaseDate": "2023-04-06T12:34:59Z",
-      "daysSinceLastRelease": 1285,
+      "daysSinceLastRelease": 1292,
       "status": "stale",
       "trend": "flat"
     },
@@ -180,7 +180,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 1.67,
       "lastReleaseDate": "2026-03-29T16:58:53Z",
-      "daysSinceLastRelease": 197,
+      "daysSinceLastRelease": 204,
       "status": "stale",
       "trend": "flat"
     },
@@ -190,27 +190,27 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 1.67,
       "lastReleaseDate": "2025-04-18T12:31:48Z",
-      "daysSinceLastRelease": 542,
+      "daysSinceLastRelease": 549,
       "status": "stale",
       "trend": "flat"
     },
     {
       "implementation": "sjf4j",
       "releasesThisMonth": 0,
-      "releasesLastMonth": 1,
+      "releasesLastMonth": 0,
       "avgReleasesPerMonth": 1.42,
       "lastReleaseDate": "2026-08-13T14:47:38Z",
-      "daysSinceLastRelease": 60,
+      "daysSinceLastRelease": 67,
       "status": "moderate",
-      "trend": "down"
+      "trend": "flat"
     },
     {
       "implementation": "jsonschema-rs",
-      "releasesThisMonth": 37,
+      "releasesThisMonth": 38,
       "releasesLastMonth": 41,
       "avgReleasesPerMonth": 8.33,
-      "lastReleaseDate": "2026-10-06T14:52:47Z",
-      "daysSinceLastRelease": 6,
+      "lastReleaseDate": "2026-10-16T20:39:10Z",
+      "daysSinceLastRelease": 3,
       "status": "active",
       "trend": "down"
     },
@@ -220,7 +220,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 2.58,
       "lastReleaseDate": "2026-06-07T21:01:04Z",
-      "daysSinceLastRelease": 127,
+      "daysSinceLastRelease": 134,
       "status": "stale",
       "trend": "flat"
     },
@@ -230,7 +230,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 0.08,
       "lastReleaseDate": "2025-02-13T18:18:24Z",
-      "daysSinceLastRelease": 606,
+      "daysSinceLastRelease": 613,
       "status": "stale",
       "trend": "flat"
     },
@@ -240,7 +240,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 1.67,
       "lastReleaseDate": "2026-08-06T09:16:56Z",
-      "daysSinceLastRelease": 67,
+      "daysSinceLastRelease": 74,
       "status": "moderate",
       "trend": "flat"
     },
@@ -250,7 +250,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 2.42,
       "lastReleaseDate": "2026-02-27T21:32:10Z",
-      "daysSinceLastRelease": 227,
+      "daysSinceLastRelease": 234,
       "status": "stale",
       "trend": "flat"
     },
@@ -260,7 +260,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 2,
       "lastReleaseDate": "2023-10-22T11:38:11Z",
-      "daysSinceLastRelease": 1086,
+      "daysSinceLastRelease": 1093,
       "status": "stale",
       "trend": "flat"
     },
@@ -270,7 +270,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 3.5,
       "lastReleaseDate": "2026-09-26T01:34:19Z",
-      "daysSinceLastRelease": 17,
+      "daysSinceLastRelease": 24,
       "status": "active",
       "trend": "up"
     },
@@ -290,7 +290,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 0.17,
       "lastReleaseDate": "2026-02-26T23:26:11Z",
-      "daysSinceLastRelease": 228,
+      "daysSinceLastRelease": 235,
       "status": "stale",
       "trend": "flat"
     },
@@ -306,11 +306,11 @@
     },
     {
       "implementation": "Corvus.JsonSchema",
-      "releasesThisMonth": 11,
-      "releasesLastMonth": 10,
+      "releasesThisMonth": 14,
+      "releasesLastMonth": 11,
       "avgReleasesPerMonth": 8.33,
-      "lastReleaseDate": "2026-10-09T22:14:01Z",
-      "daysSinceLastRelease": 3,
+      "lastReleaseDate": "2026-10-17T16:22:57Z",
+      "daysSinceLastRelease": 2,
       "status": "active",
       "trend": "up"
     },
@@ -320,7 +320,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 8.33,
       "lastReleaseDate": "2025-08-12T10:51:03Z",
-      "daysSinceLastRelease": 426,
+      "daysSinceLastRelease": 433,
       "status": "stale",
       "trend": "flat"
     },
@@ -330,7 +330,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 8.33,
       "lastReleaseDate": "2026-04-24T13:24:27Z",
-      "daysSinceLastRelease": 171,
+      "daysSinceLastRelease": 178,
       "status": "stale",
       "trend": "flat"
     },
@@ -340,7 +340,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 0.17,
       "lastReleaseDate": "2025-10-06T14:10:23Z",
-      "daysSinceLastRelease": 371,
+      "daysSinceLastRelease": 378,
       "status": "stale",
       "trend": "flat"
     },
@@ -350,7 +350,7 @@
       "releasesLastMonth": 0,
       "avgReleasesPerMonth": 1.67,
       "lastReleaseDate": "2026-07-12T19:16:18Z",
-      "daysSinceLastRelease": 92,
+      "daysSinceLastRelease": 99,
       "status": "stale",
       "trend": "flat"
     },
@@ -396,21 +396,21 @@
     },
     {
       "implementation": "swift-json-schema",
-      "releasesThisMonth": 3,
-      "releasesLastMonth": 1,
+      "releasesThisMonth": 1,
+      "releasesLastMonth": 3,
       "avgReleasesPerMonth": 2.5,
       "lastReleaseDate": "2026-10-12T01:53:39Z",
-      "daysSinceLastRelease": 1,
+      "daysSinceLastRelease": 8,
       "status": "active",
-      "trend": "up"
+      "trend": "down"
     },
     {
       "implementation": "jsv",
-      "releasesThisMonth": 1,
+      "releasesThisMonth": 2,
       "releasesLastMonth": 0,
-      "avgReleasesPerMonth": 0.08,
-      "lastReleaseDate": "2026-10-04T22:06:52Z",
-      "daysSinceLastRelease": 8,
+      "avgReleasesPerMonth": 0.17,
+      "lastReleaseDate": "2026-10-14T21:14:50Z",
+      "daysSinceLastRelease": 5,
       "status": "active",
       "trend": "up"
     }
@@ -454,12 +454,12 @@
     },
     {
       "implementation": "networknt",
-      "thisMonth": 4,
+      "thisMonth": 5,
       "lastMonth": 4,
-      "twoMonthsAgo": 1,
-      "growthRate": 0,
-      "status": "stable",
-      "totalUniqueContributors": 4
+      "twoMonthsAgo": 3,
+      "growthRate": 25,
+      "status": "growing",
+      "totalUniqueContributors": 5
     },
     {
       "implementation": "rc-circe",
@@ -490,19 +490,19 @@
     },
     {
       "implementation": "sjf4j",
-      "thisMonth": 2,
+      "thisMonth": 1,
       "lastMonth": 1,
       "twoMonthsAgo": 2,
-      "growthRate": 100,
-      "status": "growing",
-      "totalUniqueContributors": 2
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 1
     },
     {
       "implementation": "jsonschema-rs",
       "thisMonth": 2,
-      "lastMonth": 4,
+      "lastMonth": 5,
       "twoMonthsAgo": 2,
-      "growthRate": -50,
+      "growthRate": -60,
       "status": "declining",
       "totalUniqueContributors": 2
     },
@@ -526,12 +526,12 @@
     },
     {
       "implementation": "jsonschema (Go)",
-      "thisMonth": 1,
+      "thisMonth": 2,
       "lastMonth": 0,
       "twoMonthsAgo": 1,
       "growthRate": 100,
       "status": "growing",
-      "totalUniqueContributors": 1
+      "totalUniqueContributors": 2
     },
     {
       "implementation": "dev.harrel.json-schema",
@@ -554,20 +554,20 @@
     {
       "implementation": "Newtonsoft.Json.Schema",
       "thisMonth": 1,
-      "lastMonth": 0,
+      "lastMonth": 1,
       "twoMonthsAgo": 0,
-      "growthRate": 100,
-      "status": "growing",
+      "growthRate": 0,
+      "status": "stable",
       "totalUniqueContributors": 1
     },
     {
       "implementation": "JsonSchema.Net",
-      "thisMonth": 2,
+      "thisMonth": 3,
       "lastMonth": 0,
       "twoMonthsAgo": 1,
       "growthRate": 100,
       "status": "growing",
-      "totalUniqueContributors": 2
+      "totalUniqueContributors": 3
     },
     {
       "implementation": "georgeakulov/json-schema",
@@ -627,19 +627,19 @@
       "implementation": "vscode-json-languageservice",
       "thisMonth": 1,
       "lastMonth": 7,
-      "twoMonthsAgo": 1,
+      "twoMonthsAgo": 0,
       "growthRate": -85.71,
       "status": "declining",
       "totalUniqueContributors": 1
     },
     {
       "implementation": "hyperjump",
-      "thisMonth": 2,
+      "thisMonth": 3,
       "lastMonth": 0,
       "twoMonthsAgo": 1,
       "growthRate": 100,
       "status": "growing",
-      "totalUniqueContributors": 2
+      "totalUniqueContributors": 3
     },
     {
       "implementation": "json_schemer",
@@ -652,12 +652,12 @@
     },
     {
       "implementation": "jsu",
-      "thisMonth": 1,
+      "thisMonth": 0,
       "lastMonth": 1,
       "twoMonthsAgo": 1,
-      "growthRate": 0,
-      "status": "stable",
-      "totalUniqueContributors": 1
+      "growthRate": -100,
+      "status": "declining",
+      "totalUniqueContributors": 0
     },
     {
       "implementation": "JSON-Schema-Modern",
@@ -681,7 +681,7 @@
       "implementation": "jsv",
       "thisMonth": 1,
       "lastMonth": 2,
-      "twoMonthsAgo": 1,
+      "twoMonthsAgo": 2,
       "growthRate": -50,
       "status": "declining",
       "totalUniqueContributors": 1
@@ -695,12 +695,6 @@
       "currentPercentage": 99.92,
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
-        {
-          "week": "2026-08-24",
-          "passed": 1276,
-          "total": 1277,
-          "percentage": 99.92
-        },
         {
           "week": "2026-08-31",
           "passed": 1276,
@@ -739,6 +733,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1276,
           "total": 1277,
           "percentage": 99.92
@@ -755,12 +755,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1194,
-          "total": 1273,
-          "percentage": 93.79
-        },
-        {
           "week": "2026-08-31",
           "passed": 1194,
           "total": 1273,
@@ -798,6 +792,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1194,
           "total": 1273,
           "percentage": 93.79
@@ -814,12 +814,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -857,6 +851,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -873,12 +873,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1274,
-          "total": 1275,
-          "percentage": 99.92
-        },
-        {
           "week": "2026-08-31",
           "passed": 1274,
           "total": 1275,
@@ -916,6 +910,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1274,
           "total": 1275,
           "percentage": 99.92
@@ -932,12 +932,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -975,6 +969,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -991,12 +991,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1268,
-          "total": 1271,
-          "percentage": 99.76
-        },
-        {
           "week": "2026-08-31",
           "passed": 1268,
           "total": 1271,
@@ -1034,6 +1028,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1268,
           "total": 1271,
           "percentage": 99.76
@@ -1050,12 +1050,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1093,6 +1087,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1109,12 +1109,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1267,
-          "total": 1277,
-          "percentage": 99.22
-        },
-        {
           "week": "2026-08-31",
           "passed": 1267,
           "total": 1277,
@@ -1152,6 +1146,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1267,
           "total": 1277,
           "percentage": 99.22
@@ -1168,12 +1168,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1211,6 +1205,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1227,12 +1227,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1270,6 +1264,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1286,12 +1286,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1329,6 +1323,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1345,12 +1345,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1388,6 +1382,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1404,12 +1404,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1447,6 +1441,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1463,12 +1463,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1506,6 +1500,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1522,12 +1522,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1271,
-          "total": 1275,
-          "percentage": 99.69
-        },
-        {
           "week": "2026-08-31",
           "passed": 1271,
           "total": 1275,
@@ -1565,6 +1559,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1271,
           "total": 1275,
           "percentage": 99.69
@@ -1581,12 +1581,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1268,
-          "total": 1273,
-          "percentage": 99.61
-        },
-        {
           "week": "2026-08-31",
           "passed": 1268,
           "total": 1273,
@@ -1624,6 +1618,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1268,
           "total": 1273,
           "percentage": 99.61
@@ -1640,12 +1640,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1275,
-          "total": 1275,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1275,
           "total": 1275,
@@ -1683,6 +1677,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1275,
           "total": 1275,
           "percentage": 100
@@ -1699,12 +1699,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1742,6 +1736,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1758,12 +1758,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1235,
-          "total": 1240,
-          "percentage": 99.6
-        },
-        {
           "week": "2026-08-31",
           "passed": 1235,
           "total": 1240,
@@ -1801,6 +1795,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1235,
           "total": 1240,
           "percentage": 99.6
@@ -1817,12 +1817,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -1860,6 +1854,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -1876,12 +1876,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1225,
-          "total": 1273,
-          "percentage": 96.23
-        },
-        {
           "week": "2026-08-31",
           "passed": 1225,
           "total": 1273,
@@ -1919,6 +1913,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1225,
           "total": 1273,
           "percentage": 96.23
@@ -1935,12 +1935,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1029,
-          "total": 1064,
-          "percentage": 96.71
-        },
-        {
           "week": "2026-08-31",
           "passed": 1029,
           "total": 1064,
@@ -1978,6 +1972,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1029,
           "total": 1064,
           "percentage": 96.71
@@ -1994,12 +1994,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1221,
-          "total": 1263,
-          "percentage": 96.67
-        },
-        {
           "week": "2026-08-31",
           "passed": 1221,
           "total": 1263,
@@ -2037,6 +2031,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1221,
           "total": 1263,
           "percentage": 96.67
@@ -2053,12 +2053,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1174,
-          "total": 1277,
-          "percentage": 91.93
-        },
-        {
           "week": "2026-08-31",
           "passed": 1174,
           "total": 1277,
@@ -2096,6 +2090,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1174,
           "total": 1277,
           "percentage": 91.93
@@ -2112,12 +2112,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1273,
-          "total": 1277,
-          "percentage": 99.69
-        },
-        {
           "week": "2026-08-31",
           "passed": 1273,
           "total": 1277,
@@ -2155,6 +2149,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1273,
           "total": 1277,
           "percentage": 99.69
@@ -2171,12 +2171,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -2214,6 +2208,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -2230,12 +2230,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1154,
-          "total": 1277,
-          "percentage": 90.37
-        },
-        {
           "week": "2026-08-31",
           "passed": 1154,
           "total": 1277,
@@ -2273,6 +2267,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1154,
           "total": 1277,
           "percentage": 90.37
@@ -2289,12 +2289,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -2332,6 +2326,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1277,
           "total": 1277,
           "percentage": 100
@@ -2348,12 +2348,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1267,
-          "total": 1277,
-          "percentage": 99.22
-        },
-        {
           "week": "2026-08-31",
           "passed": 1267,
           "total": 1277,
@@ -2391,6 +2385,12 @@
         },
         {
           "week": "2026-10-12",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-19",
           "passed": 1267,
           "total": 1277,
           "percentage": 99.22
@@ -2407,12 +2407,6 @@
       "changeFromLastWeek": 0,
       "trendLast8Weeks": [
         {
-          "week": "2026-08-24",
-          "passed": 1277,
-          "total": 1277,
-          "percentage": 100
-        },
-        {
           "week": "2026-08-31",
           "passed": 1277,
           "total": 1277,
@@ -2453,6 +2447,12 @@
           "passed": 1277,
           "total": 1277,
           "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
         }
       ],
       "adoptionVelocity": "slow",
@@ -2462,24 +2462,24 @@
   "activityHealth": [
     {
       "implementation": "jsonschema (Python)",
-      "openIssues": 49,
-      "openPRs": 5,
-      "avgResponseTimeDays": 328.9,
-      "avgResponseTimeHours": 7893.6,
-      "openIssuesTrend": "stable",
-      "medianResolutionDays": 493,
+      "openIssues": 52,
+      "openPRs": 6,
+      "avgResponseTimeDays": 311.6,
+      "avgResponseTimeHours": 7478.4,
+      "openIssuesTrend": "increasing",
+      "medianResolutionDays": 467,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "opis/json-schema",
-      "openIssues": 13,
+      "openIssues": 14,
       "openPRs": 3,
-      "avgResponseTimeDays": 168.6,
-      "avgResponseTimeHours": 4046.4,
-      "openIssuesTrend": "stable",
-      "medianResolutionDays": 252,
+      "avgResponseTimeDays": 158.2,
+      "avgResponseTimeHours": 3796.8,
+      "openIssuesTrend": "increasing",
+      "medianResolutionDays": 237,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2488,10 +2488,10 @@
       "implementation": "boon",
       "openIssues": 9,
       "openPRs": 2,
-      "avgResponseTimeDays": 178.5,
-      "avgResponseTimeHours": 4284,
+      "avgResponseTimeDays": 180.3,
+      "avgResponseTimeHours": 4327.2,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 267,
+      "medianResolutionDays": 270,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2499,23 +2499,23 @@
     {
       "implementation": "jsoncons",
       "openIssues": 15,
-      "openPRs": 4,
-      "avgResponseTimeDays": 242.2,
-      "avgResponseTimeHours": 5812.8,
-      "openIssuesTrend": "decreasing",
-      "medianResolutionDays": 363,
+      "openPRs": 7,
+      "avgResponseTimeDays": 243.9,
+      "avgResponseTimeHours": 5853.6,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 365,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "networknt",
-      "openIssues": 11,
-      "openPRs": 5,
-      "avgResponseTimeDays": 73.5,
-      "avgResponseTimeHours": 1764,
-      "openIssuesTrend": "increasing",
-      "medianResolutionDays": 110,
+      "openIssues": 5,
+      "openPRs": 1,
+      "avgResponseTimeDays": 12.7,
+      "avgResponseTimeHours": 304.8,
+      "openIssuesTrend": "decreasing",
+      "medianResolutionDays": 19,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2524,10 +2524,10 @@
       "implementation": "rc-circe",
       "openIssues": 2,
       "openPRs": 0,
-      "avgResponseTimeDays": 393.7,
-      "avgResponseTimeHours": 9448.8,
+      "avgResponseTimeDays": 395.4,
+      "avgResponseTimeHours": 9489.6,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 590,
+      "medianResolutionDays": 593,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2535,11 +2535,11 @@
     {
       "implementation": "openapi-processor",
       "openIssues": 16,
-      "openPRs": 4,
-      "avgResponseTimeDays": 251.7,
-      "avgResponseTimeHours": 6040.8,
+      "openPRs": 2,
+      "avgResponseTimeDays": 253.5,
+      "avgResponseTimeHours": 6084,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 377,
+      "medianResolutionDays": 380,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2548,10 +2548,10 @@
       "implementation": "jsonschemafriend",
       "openIssues": 25,
       "openPRs": 15,
-      "avgResponseTimeDays": 322,
-      "avgResponseTimeHours": 7728,
+      "avgResponseTimeDays": 323.8,
+      "avgResponseTimeHours": 7771.2,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 483,
+      "medianResolutionDays": 485,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2559,23 +2559,23 @@
     {
       "implementation": "sjf4j",
       "openIssues": 2,
-      "openPRs": 0,
-      "avgResponseTimeDays": 29.7,
-      "avgResponseTimeHours": 712.8,
+      "openPRs": 7,
+      "avgResponseTimeDays": 31.4,
+      "avgResponseTimeHours": 753.6,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 44,
+      "medianResolutionDays": 47,
       "health": "slow",
       "responsiveness": "slow",
-      "communityFeedbackSignal": "neutral"
+      "communityFeedbackSignal": "positive"
     },
     {
       "implementation": "jsonschema-rs",
       "openIssues": 8,
-      "openPRs": 12,
-      "avgResponseTimeDays": 122.2,
-      "avgResponseTimeHours": 2932.8,
+      "openPRs": 11,
+      "avgResponseTimeDays": 123.4,
+      "avgResponseTimeHours": 2961.6,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 183,
+      "medianResolutionDays": 185,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2584,10 +2584,10 @@
       "implementation": "kmp-validator",
       "openIssues": 8,
       "openPRs": 10,
-      "avgResponseTimeDays": 184.8,
-      "avgResponseTimeHours": 4435.2,
+      "avgResponseTimeDays": 186.6,
+      "avgResponseTimeHours": 4478.4,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 277,
+      "medianResolutionDays": 279,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2596,10 +2596,10 @@
       "implementation": "blaze",
       "openIssues": 14,
       "openPRs": 10,
-      "avgResponseTimeDays": 127,
-      "avgResponseTimeHours": 3048,
+      "avgResponseTimeDays": 128.8,
+      "avgResponseTimeHours": 3091.2,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 190,
+      "medianResolutionDays": 193,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2607,11 +2607,11 @@
     {
       "implementation": "jsonschema (Go)",
       "openIssues": 18,
-      "openPRs": 29,
-      "avgResponseTimeDays": 115.4,
-      "avgResponseTimeHours": 2769.6,
-      "openIssuesTrend": "increasing",
-      "medianResolutionDays": 173,
+      "openPRs": 28,
+      "avgResponseTimeDays": 117.2,
+      "avgResponseTimeHours": 2812.8,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 175,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2620,10 +2620,10 @@
       "implementation": "dev.harrel.json-schema",
       "openIssues": 3,
       "openPRs": 3,
-      "avgResponseTimeDays": 120.6,
-      "avgResponseTimeHours": 2894.4,
+      "avgResponseTimeDays": 122.4,
+      "avgResponseTimeHours": 2937.6,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 180,
+      "medianResolutionDays": 183,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2644,22 +2644,22 @@
       "implementation": "Newtonsoft.Json.Schema",
       "openIssues": 69,
       "openPRs": 3,
-      "avgResponseTimeDays": 494.6,
-      "avgResponseTimeHours": 11870.4,
+      "avgResponseTimeDays": 496.3,
+      "avgResponseTimeHours": 11911.2,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 741,
+      "medianResolutionDays": 744,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "needs_attention"
     },
     {
       "implementation": "JsonSchema.Net",
-      "openIssues": 22,
+      "openIssues": 21,
       "openPRs": 2,
-      "avgResponseTimeDays": 142.1,
-      "avgResponseTimeHours": 3410.4,
-      "openIssuesTrend": "stable",
-      "medianResolutionDays": 213,
+      "avgResponseTimeDays": 146.8,
+      "avgResponseTimeHours": 3523.2,
+      "openIssuesTrend": "decreasing",
+      "medianResolutionDays": 220,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2680,22 +2680,22 @@
       "implementation": "schemasafe",
       "openIssues": 16,
       "openPRs": 3,
-      "avgResponseTimeDays": 326.3,
-      "avgResponseTimeHours": 7831.2,
+      "avgResponseTimeDays": 328.1,
+      "avgResponseTimeHours": 7874.4,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 489,
+      "medianResolutionDays": 492,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "Corvus.JsonSchema",
-      "openIssues": 16,
+      "openIssues": 20,
       "openPRs": 0,
-      "avgResponseTimeDays": 17.5,
-      "avgResponseTimeHours": 420,
+      "avgResponseTimeDays": 15.5,
+      "avgResponseTimeHours": 372,
       "openIssuesTrend": "increasing",
-      "medianResolutionDays": 26,
+      "medianResolutionDays": 23,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2704,10 +2704,10 @@
       "implementation": "cfworker",
       "openIssues": 15,
       "openPRs": 5,
-      "avgResponseTimeDays": 322.8,
-      "avgResponseTimeHours": 7747.2,
-      "openIssuesTrend": "increasing",
-      "medianResolutionDays": 484,
+      "avgResponseTimeDays": 324.6,
+      "avgResponseTimeHours": 7790.4,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 486,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2715,11 +2715,11 @@
     {
       "implementation": "ajv",
       "openIssues": 100,
-      "openPRs": 90,
-      "avgResponseTimeDays": 150.7,
-      "avgResponseTimeHours": 3616.8,
+      "openPRs": 94,
+      "avgResponseTimeDays": 145.9,
+      "avgResponseTimeHours": 3501.6,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 226,
+      "medianResolutionDays": 218,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2728,10 +2728,10 @@
       "implementation": "ajv-plus",
       "openIssues": 11,
       "openPRs": 7,
-      "avgResponseTimeDays": 97.3,
-      "avgResponseTimeHours": 2335.2,
+      "avgResponseTimeDays": 99.1,
+      "avgResponseTimeHours": 2378.4,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 145,
+      "medianResolutionDays": 148,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "positive"
@@ -2739,23 +2739,23 @@
     {
       "implementation": "vscode-json-languageservice",
       "openIssues": 74,
-      "openPRs": 23,
-      "avgResponseTimeDays": 252.1,
-      "avgResponseTimeHours": 6050.4,
+      "openPRs": 27,
+      "avgResponseTimeDays": 253.8,
+      "avgResponseTimeHours": 6091.2,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 378,
+      "medianResolutionDays": 380,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "hyperjump",
-      "openIssues": 7,
+      "openIssues": 8,
       "openPRs": 0,
-      "avgResponseTimeDays": 133.9,
-      "avgResponseTimeHours": 3213.6,
-      "openIssuesTrend": "decreasing",
-      "medianResolutionDays": 200,
+      "avgResponseTimeDays": 97.8,
+      "avgResponseTimeHours": 2347.2,
+      "openIssuesTrend": "increasing",
+      "medianResolutionDays": 146,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2764,10 +2764,10 @@
       "implementation": "json_schemer",
       "openIssues": 14,
       "openPRs": 5,
-      "avgResponseTimeDays": 141.3,
-      "avgResponseTimeHours": 3391.2,
+      "avgResponseTimeDays": 143,
+      "avgResponseTimeHours": 3432,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 211,
+      "medianResolutionDays": 214,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
@@ -2788,34 +2788,34 @@
       "implementation": "JSON-Schema-Modern",
       "openIssues": 36,
       "openPRs": 0,
-      "avgResponseTimeDays": 412.8,
-      "avgResponseTimeHours": 9907.2,
+      "avgResponseTimeDays": 414.5,
+      "avgResponseTimeHours": 9948,
       "openIssuesTrend": "stable",
-      "medianResolutionDays": 619,
+      "medianResolutionDays": 621,
       "health": "slow",
       "responsiveness": "slow",
       "communityFeedbackSignal": "neutral"
     },
     {
       "implementation": "swift-json-schema",
-      "openIssues": 3,
+      "openIssues": 4,
       "openPRs": 7,
-      "avgResponseTimeDays": 3.5,
-      "avgResponseTimeHours": 84,
+      "avgResponseTimeDays": 4.3,
+      "avgResponseTimeHours": 103.2,
       "openIssuesTrend": "increasing",
-      "medianResolutionDays": 5,
+      "medianResolutionDays": 6,
       "health": "moderate",
       "responsiveness": "moderate",
       "communityFeedbackSignal": "positive"
     },
     {
       "implementation": "jsv",
-      "openIssues": 0,
+      "openIssues": 1,
       "openPRs": 0,
-      "avgResponseTimeDays": 0,
-      "avgResponseTimeHours": 0,
-      "openIssuesTrend": "stable",
-      "medianResolutionDays": 0,
+      "avgResponseTimeDays": 0.9,
+      "avgResponseTimeHours": 21.6,
+      "openIssuesTrend": "increasing",
+      "medianResolutionDays": 1,
       "health": "active",
       "responsiveness": "very-quick",
       "communityFeedbackSignal": "neutral"
@@ -2827,8 +2827,8 @@
     "dimensions": {
       "complianceStrength": 99,
       "activityHealth": 18,
-      "adoptionMomentum": 20,
-      "communitySupport": 30
+      "adoptionMomentum": 17,
+      "communitySupport": 33
     }
   }
 }
