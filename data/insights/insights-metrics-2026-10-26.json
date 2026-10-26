@@ -1,0 +1,2834 @@
+{
+  "timestamp": "2026-10-26T02:57:38.205Z",
+  "languageDistribution": {
+    "languages": [
+      {
+        "name": "Java",
+        "count": 6,
+        "percentage": 20
+      },
+      {
+        "name": "TypeScript",
+        "count": 4,
+        "percentage": 13.33
+      },
+      {
+        "name": "Python",
+        "count": 3,
+        "percentage": 10
+      },
+      {
+        "name": "C#",
+        "count": 3,
+        "percentage": 10
+      },
+      {
+        "name": "Rust",
+        "count": 2,
+        "percentage": 6.67
+      },
+      {
+        "name": "C++",
+        "count": 2,
+        "percentage": 6.67
+      },
+      {
+        "name": "JavaScript",
+        "count": 2,
+        "percentage": 6.67
+      },
+      {
+        "name": "PHP",
+        "count": 1,
+        "percentage": 3.33
+      },
+      {
+        "name": "Scala",
+        "count": 1,
+        "percentage": 3.33
+      },
+      {
+        "name": "Kotlin",
+        "count": 1,
+        "percentage": 3.33
+      },
+      {
+        "name": "Go",
+        "count": 1,
+        "percentage": 3.33
+      },
+      {
+        "name": "Ruby",
+        "count": 1,
+        "percentage": 3.33
+      },
+      {
+        "name": "Perl",
+        "count": 1,
+        "percentage": 3.33
+      },
+      {
+        "name": "Swift",
+        "count": 1,
+        "percentage": 3.33
+      },
+      {
+        "name": "Elixir",
+        "count": 1,
+        "percentage": 3.33
+      }
+    ],
+    "total": 30,
+    "topLanguage": "Java",
+    "gaps": [
+      {
+        "language": "Rust",
+        "issue": "low_implementations",
+        "severity": "medium",
+        "recommendation": "Encourage community to build or port more full-featured implementations in Rust."
+      },
+      {
+        "language": "C++",
+        "issue": "low_implementations",
+        "severity": "medium",
+        "recommendation": "Encourage community to build or port more full-featured implementations in C++."
+      },
+      {
+        "language": "JavaScript",
+        "issue": "low_implementations",
+        "severity": "medium",
+        "recommendation": "Encourage community to build or port more full-featured implementations in JavaScript."
+      },
+      {
+        "language": "PHP",
+        "issue": "low_implementations",
+        "severity": "high",
+        "recommendation": "Encourage community to build or port more full-featured implementations in PHP."
+      },
+      {
+        "language": "Scala",
+        "issue": "low_implementations",
+        "severity": "high",
+        "recommendation": "Encourage community to build or port more full-featured implementations in Scala."
+      }
+    ]
+  },
+  "releaseFrequency": [
+    {
+      "implementation": "jsonschema (Python)",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 5.67,
+      "lastReleaseDate": "2026-01-07T13:41:11Z",
+      "daysSinceLastRelease": 292,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "opis/json-schema",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 1.5,
+      "lastReleaseDate": "2025-10-17T12:48:19Z",
+      "daysSinceLastRelease": 374,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "boon",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0.17,
+      "lastReleaseDate": "2025-01-07T16:28:53Z",
+      "daysSinceLastRelease": 657,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "jsoncons",
+      "releasesThisMonth": 1,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 8.33,
+      "lastReleaseDate": "2026-10-05T17:54:16Z",
+      "daysSinceLastRelease": 21,
+      "status": "active",
+      "trend": "up"
+    },
+    {
+      "implementation": "networknt",
+      "releasesThisMonth": 3,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 8.33,
+      "lastReleaseDate": "2026-10-02T02:56:11Z",
+      "daysSinceLastRelease": 25,
+      "status": "active",
+      "trend": "up"
+    },
+    {
+      "implementation": "rc-circe",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0.25,
+      "lastReleaseDate": "2023-04-06T12:34:59Z",
+      "daysSinceLastRelease": 1299,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "openapi-processor",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 1.67,
+      "lastReleaseDate": "2026-03-29T16:58:53Z",
+      "daysSinceLastRelease": 211,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "jsonschemafriend",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 1.67,
+      "lastReleaseDate": "2025-04-18T12:31:48Z",
+      "daysSinceLastRelease": 556,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "sjf4j",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 1.42,
+      "lastReleaseDate": "2026-08-13T14:47:38Z",
+      "daysSinceLastRelease": 74,
+      "status": "moderate",
+      "trend": "flat"
+    },
+    {
+      "implementation": "jsonschema-rs",
+      "releasesThisMonth": 40,
+      "releasesLastMonth": 36,
+      "avgReleasesPerMonth": 8.33,
+      "lastReleaseDate": "2026-10-24T10:04:17Z",
+      "daysSinceLastRelease": 2,
+      "status": "active",
+      "trend": "up"
+    },
+    {
+      "implementation": "kmp-validator",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 2.58,
+      "lastReleaseDate": "2026-06-07T21:01:04Z",
+      "daysSinceLastRelease": 141,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "blaze",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0.08,
+      "lastReleaseDate": "2025-02-13T18:18:24Z",
+      "daysSinceLastRelease": 620,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "jsonschema (Go)",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 1.67,
+      "lastReleaseDate": "2026-08-06T09:16:56Z",
+      "daysSinceLastRelease": 81,
+      "status": "moderate",
+      "trend": "flat"
+    },
+    {
+      "implementation": "dev.harrel.json-schema",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 2.42,
+      "lastReleaseDate": "2026-02-27T21:32:10Z",
+      "daysSinceLastRelease": 241,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "jschon",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 2,
+      "lastReleaseDate": "2023-10-22T11:38:11Z",
+      "daysSinceLastRelease": 1100,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "Newtonsoft.Json.Schema",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 1,
+      "avgReleasesPerMonth": 3.5,
+      "lastReleaseDate": "2026-09-26T01:34:19Z",
+      "daysSinceLastRelease": 31,
+      "status": "moderate",
+      "trend": "down"
+    },
+    {
+      "implementation": "JsonSchema.Net",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0,
+      "lastReleaseDate": "N/A",
+      "daysSinceLastRelease": 999,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "georgeakulov/json-schema",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0.17,
+      "lastReleaseDate": "2026-02-26T23:26:11Z",
+      "daysSinceLastRelease": 242,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "schemasafe",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0,
+      "lastReleaseDate": "N/A",
+      "daysSinceLastRelease": 999,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "Corvus.JsonSchema",
+      "releasesThisMonth": 17,
+      "releasesLastMonth": 10,
+      "avgReleasesPerMonth": 8.33,
+      "lastReleaseDate": "2026-10-20T13:00:49Z",
+      "daysSinceLastRelease": 6,
+      "status": "active",
+      "trend": "up"
+    },
+    {
+      "implementation": "cfworker",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 8.33,
+      "lastReleaseDate": "2025-08-12T10:51:03Z",
+      "daysSinceLastRelease": 440,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "ajv",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 8.33,
+      "lastReleaseDate": "2026-04-24T13:24:27Z",
+      "daysSinceLastRelease": 185,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "ajv-plus",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0.17,
+      "lastReleaseDate": "2025-10-06T14:10:23Z",
+      "daysSinceLastRelease": 385,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "vscode-json-languageservice",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 1.67,
+      "lastReleaseDate": "2026-07-12T19:16:18Z",
+      "daysSinceLastRelease": 106,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "hyperjump",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0,
+      "lastReleaseDate": "N/A",
+      "daysSinceLastRelease": 999,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "json_schemer",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0,
+      "lastReleaseDate": "N/A",
+      "daysSinceLastRelease": 999,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "jsu",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0,
+      "lastReleaseDate": "N/A",
+      "daysSinceLastRelease": 999,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "JSON-Schema-Modern",
+      "releasesThisMonth": 0,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0,
+      "lastReleaseDate": "N/A",
+      "daysSinceLastRelease": 999,
+      "status": "stale",
+      "trend": "flat"
+    },
+    {
+      "implementation": "swift-json-schema",
+      "releasesThisMonth": 1,
+      "releasesLastMonth": 3,
+      "avgReleasesPerMonth": 2.5,
+      "lastReleaseDate": "2026-10-12T01:53:39Z",
+      "daysSinceLastRelease": 15,
+      "status": "active",
+      "trend": "down"
+    },
+    {
+      "implementation": "jsv",
+      "releasesThisMonth": 2,
+      "releasesLastMonth": 0,
+      "avgReleasesPerMonth": 0.17,
+      "lastReleaseDate": "2026-10-14T21:14:50Z",
+      "daysSinceLastRelease": 12,
+      "status": "active",
+      "trend": "up"
+    }
+  ],
+  "contributorGrowth": [
+    {
+      "implementation": "jsonschema (Python)",
+      "thisMonth": 3,
+      "lastMonth": 4,
+      "twoMonthsAgo": 4,
+      "growthRate": -25,
+      "status": "declining",
+      "totalUniqueContributors": 3
+    },
+    {
+      "implementation": "opis/json-schema",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "boon",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "jsoncons",
+      "thisMonth": 9,
+      "lastMonth": 2,
+      "twoMonthsAgo": 2,
+      "growthRate": 350,
+      "status": "growing",
+      "totalUniqueContributors": 9
+    },
+    {
+      "implementation": "networknt",
+      "thisMonth": 7,
+      "lastMonth": 3,
+      "twoMonthsAgo": 4,
+      "growthRate": 133.33,
+      "status": "growing",
+      "totalUniqueContributors": 7
+    },
+    {
+      "implementation": "rc-circe",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "openapi-processor",
+      "thisMonth": 2,
+      "lastMonth": 2,
+      "twoMonthsAgo": 2,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 2
+    },
+    {
+      "implementation": "jsonschemafriend",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "sjf4j",
+      "thisMonth": 1,
+      "lastMonth": 1,
+      "twoMonthsAgo": 2,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 1
+    },
+    {
+      "implementation": "jsonschema-rs",
+      "thisMonth": 2,
+      "lastMonth": 4,
+      "twoMonthsAgo": 2,
+      "growthRate": -50,
+      "status": "declining",
+      "totalUniqueContributors": 2
+    },
+    {
+      "implementation": "kmp-validator",
+      "thisMonth": 0,
+      "lastMonth": 1,
+      "twoMonthsAgo": 1,
+      "growthRate": -100,
+      "status": "declining",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "blaze",
+      "thisMonth": 2,
+      "lastMonth": 4,
+      "twoMonthsAgo": 3,
+      "growthRate": -50,
+      "status": "declining",
+      "totalUniqueContributors": 2
+    },
+    {
+      "implementation": "jsonschema (Go)",
+      "thisMonth": 1,
+      "lastMonth": 1,
+      "twoMonthsAgo": 1,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 1
+    },
+    {
+      "implementation": "dev.harrel.json-schema",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 2,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "jschon",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "Newtonsoft.Json.Schema",
+      "thisMonth": 0,
+      "lastMonth": 1,
+      "twoMonthsAgo": 0,
+      "growthRate": -100,
+      "status": "declining",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "JsonSchema.Net",
+      "thisMonth": 4,
+      "lastMonth": 1,
+      "twoMonthsAgo": 1,
+      "growthRate": 300,
+      "status": "growing",
+      "totalUniqueContributors": 4
+    },
+    {
+      "implementation": "georgeakulov/json-schema",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "schemasafe",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "Corvus.JsonSchema",
+      "thisMonth": 1,
+      "lastMonth": 1,
+      "twoMonthsAgo": 2,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 1
+    },
+    {
+      "implementation": "cfworker",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "ajv",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "ajv-plus",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "vscode-json-languageservice",
+      "thisMonth": 1,
+      "lastMonth": 4,
+      "twoMonthsAgo": 4,
+      "growthRate": -75,
+      "status": "declining",
+      "totalUniqueContributors": 1
+    },
+    {
+      "implementation": "hyperjump",
+      "thisMonth": 3,
+      "lastMonth": 0,
+      "twoMonthsAgo": 1,
+      "growthRate": 100,
+      "status": "growing",
+      "totalUniqueContributors": 3
+    },
+    {
+      "implementation": "json_schemer",
+      "thisMonth": 0,
+      "lastMonth": 0,
+      "twoMonthsAgo": 0,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "jsu",
+      "thisMonth": 0,
+      "lastMonth": 1,
+      "twoMonthsAgo": 1,
+      "growthRate": -100,
+      "status": "declining",
+      "totalUniqueContributors": 0
+    },
+    {
+      "implementation": "JSON-Schema-Modern",
+      "thisMonth": 1,
+      "lastMonth": 1,
+      "twoMonthsAgo": 1,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 1
+    },
+    {
+      "implementation": "swift-json-schema",
+      "thisMonth": 4,
+      "lastMonth": 1,
+      "twoMonthsAgo": 0,
+      "growthRate": 300,
+      "status": "growing",
+      "totalUniqueContributors": 4
+    },
+    {
+      "implementation": "jsv",
+      "thisMonth": 2,
+      "lastMonth": 2,
+      "twoMonthsAgo": 2,
+      "growthRate": 0,
+      "status": "stable",
+      "totalUniqueContributors": 2
+    }
+  ],
+  "testCoverageTrends": [
+    {
+      "implementation": "python-jsonschema",
+      "currentTestsPassed": 1276,
+      "currentTotalTests": 1277,
+      "currentPercentage": 99.92,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1276,
+          "total": 1277,
+          "percentage": 99.92
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "php-opis-json-schema",
+      "currentTestsPassed": 1194,
+      "currentTotalTests": 1273,
+      "currentPercentage": 93.79,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1194,
+          "total": 1273,
+          "percentage": 93.79
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "rust-boon",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "cpp-jsoncons",
+      "currentTestsPassed": 1274,
+      "currentTotalTests": 1275,
+      "currentPercentage": 99.92,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1274,
+          "total": 1275,
+          "percentage": 99.92
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "java-networknt-json-schema-validator",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "scala-rc-circe-json-validator",
+      "currentTestsPassed": 1268,
+      "currentTotalTests": 1271,
+      "currentPercentage": 99.76,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1268,
+          "total": 1271,
+          "percentage": 99.76
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "java-openapiprocessor",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "java-jsonschemafriend",
+      "currentTestsPassed": 1267,
+      "currentTotalTests": 1277,
+      "currentPercentage": 99.22,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "java-sjf4j",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "rust-jsonschema",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "kotlin-kmp-json-schema-validator",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "cpp-blaze",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "go-jsonschema",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "java-json-schema",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "python-jschon",
+      "currentTestsPassed": 1271,
+      "currentTotalTests": 1275,
+      "currentPercentage": 99.69,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1271,
+          "total": 1275,
+          "percentage": 99.69
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "dotnet-newtonsoft-json-schema",
+      "currentTestsPassed": 1268,
+      "currentTotalTests": 1273,
+      "currentPercentage": 99.61,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1268,
+          "total": 1273,
+          "percentage": 99.61
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "dotnet-jsonschema-net",
+      "currentTestsPassed": 1275,
+      "currentTotalTests": 1275,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1275,
+          "total": 1275,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "java-json-schema-react",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "js-schemasafe",
+      "currentTestsPassed": 1235,
+      "currentTotalTests": 1240,
+      "currentPercentage": 99.6,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1235,
+          "total": 1240,
+          "percentage": 99.6
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "dotnet-corvus-jsonschema",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "js-json-schema",
+      "currentTestsPassed": 1225,
+      "currentTotalTests": 1273,
+      "currentPercentage": 96.23,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1225,
+          "total": 1273,
+          "percentage": 96.23
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "js-ajv",
+      "currentTestsPassed": 1029,
+      "currentTotalTests": 1064,
+      "currentPercentage": 96.71,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1029,
+          "total": 1064,
+          "percentage": 96.71
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "js-ajv-plus",
+      "currentTestsPassed": 1221,
+      "currentTotalTests": 1263,
+      "currentPercentage": 96.67,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1221,
+          "total": 1263,
+          "percentage": 96.67
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "ts-vscode-json-languageservice",
+      "currentTestsPassed": 1174,
+      "currentTotalTests": 1277,
+      "currentPercentage": 91.93,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1174,
+          "total": 1277,
+          "percentage": 91.93
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "js-hyperjump",
+      "currentTestsPassed": 1273,
+      "currentTotalTests": 1277,
+      "currentPercentage": 99.69,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1273,
+          "total": 1277,
+          "percentage": 99.69
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "ruby-json_schemer",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "python-jsu",
+      "currentTestsPassed": 1154,
+      "currentTotalTests": 1277,
+      "currentPercentage": 90.37,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1154,
+          "total": 1277,
+          "percentage": 90.37
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "perl-json-schema-modern",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "swift-swift-json-schema",
+      "currentTestsPassed": 1267,
+      "currentTotalTests": 1277,
+      "currentPercentage": 99.22,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1267,
+          "total": 1277,
+          "percentage": 99.22
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    },
+    {
+      "implementation": "elixir-jsv",
+      "currentTestsPassed": 1277,
+      "currentTotalTests": 1277,
+      "currentPercentage": 100,
+      "changeFromLastWeek": 0,
+      "trendLast8Weeks": [
+        {
+          "week": "2026-09-07",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-14",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-21",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-09-28",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-05",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-12",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-19",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        },
+        {
+          "week": "2026-10-26",
+          "passed": 1277,
+          "total": 1277,
+          "percentage": 100
+        }
+      ],
+      "adoptionVelocity": "slow",
+      "projected100PercentDate": null
+    }
+  ],
+  "activityHealth": [
+    {
+      "implementation": "jsonschema (Python)",
+      "openIssues": 52,
+      "openPRs": 8,
+      "avgResponseTimeDays": 313.3,
+      "avgResponseTimeHours": 7519.2,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 469,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "opis/json-schema",
+      "openIssues": 14,
+      "openPRs": 5,
+      "avgResponseTimeDays": 160,
+      "avgResponseTimeHours": 3840,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 240,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "boon",
+      "openIssues": 9,
+      "openPRs": 2,
+      "avgResponseTimeDays": 182,
+      "avgResponseTimeHours": 4368,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 273,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "jsoncons",
+      "openIssues": 15,
+      "openPRs": 5,
+      "avgResponseTimeDays": 245.7,
+      "avgResponseTimeHours": 5896.8,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 368,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "networknt",
+      "openIssues": 1,
+      "openPRs": 0,
+      "avgResponseTimeDays": 58.2,
+      "avgResponseTimeHours": 1396.8,
+      "openIssuesTrend": "decreasing",
+      "medianResolutionDays": 87,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "rc-circe",
+      "openIssues": 2,
+      "openPRs": 0,
+      "avgResponseTimeDays": 397.2,
+      "avgResponseTimeHours": 9532.8,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 595,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "openapi-processor",
+      "openIssues": 16,
+      "openPRs": 6,
+      "avgResponseTimeDays": 255.2,
+      "avgResponseTimeHours": 6124.8,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 382,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "jsonschemafriend",
+      "openIssues": 25,
+      "openPRs": 15,
+      "avgResponseTimeDays": 325.5,
+      "avgResponseTimeHours": 7812,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 488,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "sjf4j",
+      "openIssues": 2,
+      "openPRs": 6,
+      "avgResponseTimeDays": 33.2,
+      "avgResponseTimeHours": 796.8,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 49,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "jsonschema-rs",
+      "openIssues": 8,
+      "openPRs": 9,
+      "avgResponseTimeDays": 103.4,
+      "avgResponseTimeHours": 2481.6,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 155,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "kmp-validator",
+      "openIssues": 8,
+      "openPRs": 10,
+      "avgResponseTimeDays": 188.3,
+      "avgResponseTimeHours": 4519.2,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 282,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "blaze",
+      "openIssues": 14,
+      "openPRs": 9,
+      "avgResponseTimeDays": 130.5,
+      "avgResponseTimeHours": 3132,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 195,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "jsonschema (Go)",
+      "openIssues": 18,
+      "openPRs": 29,
+      "avgResponseTimeDays": 118.9,
+      "avgResponseTimeHours": 2853.6,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 178,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "dev.harrel.json-schema",
+      "openIssues": 3,
+      "openPRs": 3,
+      "avgResponseTimeDays": 124.1,
+      "avgResponseTimeHours": 2978.4,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 186,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "jschon",
+      "openIssues": 0,
+      "openPRs": 0,
+      "avgResponseTimeDays": 0,
+      "avgResponseTimeHours": 0,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 0,
+      "health": "active",
+      "responsiveness": "very-quick",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "Newtonsoft.Json.Schema",
+      "openIssues": 69,
+      "openPRs": 3,
+      "avgResponseTimeDays": 498.1,
+      "avgResponseTimeHours": 11954.4,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 747,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "needs_attention"
+    },
+    {
+      "implementation": "JsonSchema.Net",
+      "openIssues": 21,
+      "openPRs": 2,
+      "avgResponseTimeDays": 148.6,
+      "avgResponseTimeHours": 3566.4,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 222,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "georgeakulov/json-schema",
+      "openIssues": 0,
+      "openPRs": 0,
+      "avgResponseTimeDays": 0,
+      "avgResponseTimeHours": 0,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 0,
+      "health": "active",
+      "responsiveness": "very-quick",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "schemasafe",
+      "openIssues": 16,
+      "openPRs": 3,
+      "avgResponseTimeDays": 329.8,
+      "avgResponseTimeHours": 7915.2,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 494,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "Corvus.JsonSchema",
+      "openIssues": 21,
+      "openPRs": 0,
+      "avgResponseTimeDays": 16.5,
+      "avgResponseTimeHours": 396,
+      "openIssuesTrend": "increasing",
+      "medianResolutionDays": 24,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "cfworker",
+      "openIssues": 15,
+      "openPRs": 6,
+      "avgResponseTimeDays": 326.3,
+      "avgResponseTimeHours": 7831.2,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 489,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "ajv",
+      "openIssues": 100,
+      "openPRs": 97,
+      "avgResponseTimeDays": 141.2,
+      "avgResponseTimeHours": 3388.8,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 211,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "ajv-plus",
+      "openIssues": 11,
+      "openPRs": 7,
+      "avgResponseTimeDays": 100.8,
+      "avgResponseTimeHours": 2419.2,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 151,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "vscode-json-languageservice",
+      "openIssues": 75,
+      "openPRs": 27,
+      "avgResponseTimeDays": 252.2,
+      "avgResponseTimeHours": 6052.8,
+      "openIssuesTrend": "increasing",
+      "medianResolutionDays": 378,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "hyperjump",
+      "openIssues": 9,
+      "openPRs": 1,
+      "avgResponseTimeDays": 88.6,
+      "avgResponseTimeHours": 2126.4,
+      "openIssuesTrend": "increasing",
+      "medianResolutionDays": 132,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "json_schemer",
+      "openIssues": 14,
+      "openPRs": 5,
+      "avgResponseTimeDays": 144.8,
+      "avgResponseTimeHours": 3475.2,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 217,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "jsu",
+      "openIssues": 0,
+      "openPRs": 0,
+      "avgResponseTimeDays": 0,
+      "avgResponseTimeHours": 0,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 0,
+      "health": "active",
+      "responsiveness": "very-quick",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "JSON-Schema-Modern",
+      "openIssues": 36,
+      "openPRs": 0,
+      "avgResponseTimeDays": 416.3,
+      "avgResponseTimeHours": 9991.2,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 624,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "neutral"
+    },
+    {
+      "implementation": "swift-json-schema",
+      "openIssues": 2,
+      "openPRs": 3,
+      "avgResponseTimeDays": 8.3,
+      "avgResponseTimeHours": 199.2,
+      "openIssuesTrend": "decreasing",
+      "medianResolutionDays": 12,
+      "health": "slow",
+      "responsiveness": "slow",
+      "communityFeedbackSignal": "positive"
+    },
+    {
+      "implementation": "jsv",
+      "openIssues": 1,
+      "openPRs": 0,
+      "avgResponseTimeDays": 2.7,
+      "avgResponseTimeHours": 64.8,
+      "openIssuesTrend": "stable",
+      "medianResolutionDays": 4,
+      "health": "moderate",
+      "responsiveness": "quick",
+      "communityFeedbackSignal": "neutral"
+    }
+  ],
+  "ecosystemMaturity": {
+    "compositeScore": 51,
+    "healthRating": "F",
+    "dimensions": {
+      "complianceStrength": 99,
+      "activityHealth": 17,
+      "adoptionMomentum": 17,
+      "communitySupport": 33
+    }
+  }
+}

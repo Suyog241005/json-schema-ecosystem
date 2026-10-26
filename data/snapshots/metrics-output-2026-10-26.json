@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-10-26T02:57:31.528Z",
+  "ajv": {
+    "package": "ajv",
+    "weeklyDownloads": 249308485,
+    "marketShare": "98.5%"
+  },
+  "hyperjump": {
+    "package": "@hyperjump/json-schema",
+    "weeklyDownloads": 206856,
+    "marketShare": "0.1%"
+  },
+  "jsonschema": {
+    "package": "jsonschema",
+    "weeklyDownloads": 3635609,
+    "marketShare": "1.4%"
+  },
+  "githubRepoCount": 4794,
+  "githubHealth": {
+    "active": 71,
+    "stale": 29,
+    "healthPercentage": "71.0"
+  },
+  "languages": [
+    {
+      "name": "TypeScript",
+      "count": 32
+    },
+    {
+      "name": "Python",
+      "count": 23
+    },
+    {
+      "name": "JavaScript",
+      "count": 15
+    },
+    {
+      "name": "Go",
+      "count": 10
+    },
+    {
+      "name": "Java",
+      "count": 5
+    },
+    {
+      "name": "C++",
+      "count": 3
+    },
+    {
+      "name": "PHP",
+      "count": 3
+    },
+    {
+      "name": "Clojure",
+      "count": 2
+    },
+    {
+      "name": "Ruby",
+      "count": 2
+    },
+    {
+      "name": "Other",
+      "count": 1
+    },
+    {
+      "name": "Rust",
+      "count": 1
+    },
+    {
+      "name": "C#",
+      "count": 1
+    },
+    {
+      "name": "Vue",
+      "count": 1
+    },
+    {
+      "name": "Swift",
+      "count": 1
+    }
+  ],
+  "drafts": []
+}
