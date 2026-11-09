@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-11-02T04:05:59.707Z",
+  "timestamp": "2026-11-09T04:23:06.991Z",
   "ajv": {
     "package": "ajv",
-    "weeklyDownloads": 515092679,
+    "weeklyDownloads": 522655870,
     "marketShare": "98.3%"
   },
   "hyperjump": {
     "package": "@hyperjump/json-schema",
-    "weeklyDownloads": 462450,
+    "weeklyDownloads": 451677,
     "marketShare": "0.1%"
   },
   "jsonschema": {
     "package": "jsonschema",
-    "weeklyDownloads": 8292916,
+    "weeklyDownloads": 8554491,
     "marketShare": "1.6%"
   },
-  "githubRepoCount": 4929,
+  "githubRepoCount": 5027,
   "githubHealth": {
     "active": 70,
     "stale": 30,
